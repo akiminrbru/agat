@@ -1,0 +1,26 @@
+.allNews {
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.allNews__inner h2 {
+    margin-top: 50px;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.allNews__link {
+    font-size: 14px;
+    color: rgb(68, 68, 68);
+    margin-bottom: 40px;
+}
+
+.allNews__link a {
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+}
+
+.allNews__link a:hover {
+    text-decoration: underline;
+}

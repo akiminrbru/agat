@@ -1,0 +1,276 @@
+.allProjects {
+    min-height: 100vh;
+}
+
+.allProjects__inner {
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.allProjects__inner h2 {
+    margin-top: 50px;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.allProjects__link {
+    font-size: 14px;
+    color: rgb(68, 68, 68);
+    margin-bottom: 40px;
+}
+
+.allProjects__link a {
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+}
+
+.allProjects__link a:hover {
+    text-decoration: underline;
+}
+
+.allProjects__list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.allProjects__card {
+    /* width: 450px; */
+    width: 600px;
+}
+
+.swiper3 {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.swiper4 {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.swiper5 {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.swiper6 {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.swiper7 {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.swiper8 {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.swiper9 {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.swiper10 {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.swiper11 {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.swiper12 {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.allProjects__swiper-left {
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+    width: 30%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    cursor: url("../images/big-arrow-right.svg") 2 2, pointer;
+}
+
+.allProjects__swiper-left::after {
+    content: "";
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.35) 0, transparent 100%);
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 1s ease;
+}
+
+.allProjects__swiper-left:hover::after {
+    opacity: 1;
+}
+
+.allProjects__swiper-right {
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+    width: 30%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    cursor: url("../images/big-arrow-left.svg") 2 2, pointer;
+}
+
+.allProjects__swiper-right::after {
+    content: "";
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0.35) 0,
+        transparent 100%
+    );
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.allProjects__swiper-right:hover::after {
+    opacity: 1;
+}
+
+.swiper-pagination-bullet {
+    width: 40px !important;
+    height: 3px !important;
+
+    border-radius: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #000 !important;
+}
+
+.allProjects__card img {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    -webkit-aspect-ratio: 4/3;
+    -moz-aspect-ratio: 4/3;
+    -o-aspect-ratio: 4/3;
+    -ms-o-aspect-ratio: 4/3;
+}
+
+.allProjects__card h4 {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.allProjects__info {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.allProjects__info p {
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.allProjects__info p span {
+    font-weight: 500;
+}
+
+@media (max-width: 1440px) {
+    .allProjects__card {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .allProjects__card {
+        width: 450px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+    .allProjects__card {
+        width: 400px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .allProjects__card {
+        width: 325px;
+    }
+}
+
+@media (max-width: 767px) {
+    .allProjects__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .allProjects__card {
+        width: 400px;
+    }
+
+    .allProjects__card:last-child {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .allProjects__card {
+        width: 350px;
+    }
+
+    .allProjects__card h4 {
+        font-size: 16px;
+    }
+
+    .allProjects__card p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .allProjects__card {
+        width: 320px;
+    }
+}
+
+@media (max-width: 340px) {
+    .allProjects__card {
+        width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    .allProjects__card {
+        width: 280px;
+    }
+}

@@ -1,0 +1,156 @@
+.projects {
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.projects__inner {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.projects__inner h2 {
+    font-size: 36px;
+}
+
+.projects__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.projects__link a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.projects__link a:hover svg {
+    fill: #000;
+}
+
+.projects__link a:hover svg path {
+    fill: #fff;
+}
+
+.projects__list {
+    margin-bottom: 25px;
+}
+
+.projects__card img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    -webkit-aspect-ratio: 4/3;
+    -moz-aspect-ratio: 4/3;
+    -o-aspect-ratio: 4/3;
+    -ms-o-aspect-ratio: 4/3;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.projects__card h4 {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.projects__text {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.projects__card div {
+    margin-top: 20px;
+}
+
+.projects__list {
+    width: 600px;
+}
+
+.projects__swiper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.swiper-scrollbar {
+    display: none;
+}
+
+.swiper-button-next2 {
+    margin-right: -45px;
+}
+
+.swiper-button-prev2 {
+    margin-left: -45px;
+}
+
+.swiper-button-next2 svg:hover {
+    cursor: pointer;
+}
+
+.swiper-button-prev2 svg:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 1250px) and (max-width: 1350px) {
+}
+
+@media (max-width: 1250px) {
+}
+
+@media (max-width: 991px) {
+    .swiper-button-next2 {
+        display: none;
+    }
+
+    .swiper-button-prev2 {
+        display: none;
+    }
+
+    .swiper-scrollbar {
+        display: block;
+    }
+
+    .projects__links {
+        flex-direction: column;
+        align-items: normal;
+        margin-bottom: 30px;
+    }
+
+    .projects__link {
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 480px) {
+    .projects__swiper {
+        gap: 5px;
+    }
+
+    .projects__inner h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 380px) {
+    .projects__inner h2 {
+        font-size: 36px;
+    }
+
+    .projects__swiper {
+        gap: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .projects__swiper {
+        gap: 0;
+    }
+}

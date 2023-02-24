@@ -1,0 +1,143 @@
+.aboutFull {
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.aboutFull__inner h2 {
+    margin-top: 75px;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.aboutFull__link {
+    font-size: 14px;
+    color: rgb(68, 68, 68);
+    margin-bottom: 40px;
+}
+
+.aboutFull__link a {
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+}
+
+.aboutFull__link a:hover {
+    text-decoration: underline;
+}
+
+.aboutFull__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutFull__text p {
+    margin-top: 10px;
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+.aboutFull__list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutFull__card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    transition: 0.5s;
+}
+
+.aboutFull__card img {
+    width: 120px;
+}
+
+.aboutFull__card p {
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.aboutFull__card:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1350px) {
+    .aboutFull__info {
+        flex-direction: column-reverse;
+    }
+
+    .aboutFull__text {
+        margin-top: 15px;
+        max-width: 100%;
+    }
+
+    .aboutFull__img {
+        display: flex;
+        gap: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    .aboutFull__img2 {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .aboutFull__img {
+        gap: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .aboutFull__img {
+        gap: 30px;
+    }
+
+    .aboutFull__img img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 767px) {
+    .aboutFull__img {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .aboutFull__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutFull__card {
+        margin-top: 50px;
+    }
+    .aboutFull__img3 {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutFull__text p {
+        font-size: 16px;
+    }
+    .aboutFull__img img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    .aboutFull__text p {
+        font-size: 16px;
+    }
+    .aboutFull__img img {
+        width: 250px;
+    }
+}

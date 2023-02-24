@@ -1,0 +1,250 @@
+.main {
+    background-image: url("../assets/main/bg1.JPG");
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    z-index: 3;
+    position: sticky;
+}
+
+.main-anime {
+    animation: main-bg 20s ease infinite;
+}
+
+@keyframes main-bg {
+    0% {
+        background-image: url("../assets/main/bg1.JPG");
+    }
+    33% {
+        background-image: url("../assets/main/bg2.jpg");
+    }
+
+    66% {
+        background-image: url("../assets/main/bg3.jpg");
+    }
+}
+
+.main::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.main__inner {
+    color: #fff;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.main__inner h3 {
+    margin-top: 260px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.main__inner h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 60px;
+}
+
+.main__text {
+    margin-top: 60px;
+    border-bottom: 0.5px solid #fff;
+    padding-bottom: 50px;
+}
+
+.main__text p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.main__progress {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main__item {
+    text-align: center;
+    width: 230px;
+}
+
+.main__item div {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.main__item p {
+    color: #b3b0b0;
+    font-size: 18px;
+}
+
+.main__animation {
+    background-color: #f2f2f2;
+    z-index: 3000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__animation_no {
+    display: none;
+}
+
+.main__animation_img {
+    width: 150px;
+}
+
+.main__animation_img_no {
+    display: none;
+}
+
+.main__animation_anime {
+    animation: main__animation_up 1s;
+}
+
+@keyframes main__animation_up {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-height: 800px) {
+    .main {
+        height: 900px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .main__item div {
+        font-size: 20px;
+    }
+
+    .main__progress {
+        margin-top: 80px;
+    }
+
+    .main__item p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main__item div {
+        font-size: 18px;
+    }
+
+    .main__progress {
+        margin-top: 80px;
+    }
+
+    .main__item p {
+        font-size: 14px;
+    }
+
+    .main__animation_img {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 612px) {
+    .main__item {
+        font-size: 15px;
+    }
+
+    .main__item div {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+
+    .main__progress {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .main__item p {
+        font-size: 14px;
+    }
+
+    .main__text p {
+        font-size: 16px;
+    }
+
+    .main__animation_img {
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main__animation_img {
+        margin-bottom: 300px;
+    }
+
+    .main__inner h3 {
+        margin-top: 200px;
+    }
+
+    .main__progress {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .main__item div {
+        font-size: 17px;
+    }
+
+    .main__item p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .main__inner h3 {
+        margin-top: 200px;
+    }
+
+    .main__progress {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .main__item div {
+        font-size: 16px;
+    }
+
+    .main__item p {
+        font-size: 14px;
+    }
+
+    .main__text p {
+        font-size: 16px;
+    }
+}
