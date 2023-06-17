@@ -1,11 +1,12 @@
 .docs {
     min-height: 100vh;
-    background-color: #f2f2f2;
+    background-color: #fafafa;
 }
 
 .docs__inner {
     padding-top: 90px;
     padding-bottom: 20px;
+    color: #243746;
 }
 
 .docs__inner h2 {
@@ -23,7 +24,7 @@
 }
 
 .docs__card {
-    margin-top: 20px;
+    margin-top: 22px;
     display: flex;
 }
 
@@ -37,12 +38,12 @@
 }
 
 .docs__info h5 {
-    font-size: 18px;
+    font-size: 19px;
 }
 
 .docs__date {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .docs__date span {
@@ -53,6 +54,7 @@
 .docs__text {
     margin-top: 20px;
     font-size: 16px;
+    text-align: justify;
 }
 
 .docs__upload {
@@ -60,7 +62,7 @@
     font-size: 14px;
     margin-top: 20px;
     gap: 5px;
-    color: #000;
+    color: #243746;
 }
 
 .docs__upload div {

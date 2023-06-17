@@ -6,11 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
-            content="Компания Агат-Трейд предлагает купить железобетонные трубы для микротоннелирования ТС серии собственного производства."
+            content="ООО «Агат-Трейд» оказывает полный комплекс инжиниринговых услуг в области проектирования и строительства инженерной инфраструктуры объектов нефтегазовой и нефтехимической отрасли, электросетевого комплекса и коммунальной сферы."
         />
         <meta
             name="keywords"
-            content="трубы железобетонные для микротоннелирования, ростов-на-дону, тс, микротоннельная, 2000, 1000, 3000 мм, 1200, продавливания, купить, 1700, 2500"
+            content="трубы железобетонные для микротоннелирования, ростов-на-дону, тс, микротоннельная, 2000, 1000, 3000 мм, 1200, продавливания, купить, 1700, 2500, агат-м, agat-m"
         />
         <link rel="canonical" href="https://agat-m.ru/" />
         <meta name="robots" content="index, follow" />
@@ -31,9 +31,15 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
 
         <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/background.css" />
         <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/stat.css" />
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="stylesheet" href="styles/news.css" />
         <link rel="stylesheet" href="styles/about.css" />
@@ -58,7 +64,70 @@
         />
     </head>
     <body>
-        <header class="header header__opacity">
+        <nav class="burger">
+            <div class="burger__close" onclick="closeBurger()">
+                <img src="assets/close.svg" alt="close" />
+            </div>
+            <div class="burger__links">
+                <div>
+                    <a class="nav__link underline-one" href="./index.html#main"
+                        >Главная</a
+                    >
+                </div>
+                <div>
+                    <a class="nav__link underline-one" href="./index.html#about"
+                        >О компании</a
+                    >
+                </div>
+                <div>
+                    <a
+                        class="nav__link underline-one"
+                        href="./index.html#products"
+                        >Продукция</a
+                    >
+                </div>
+                <div>
+                    <a
+                        class="nav__link underline-one"
+                        href="./index.html#projects"
+                        >Проекты</a
+                    >
+                </div>
+                <div>
+                    <a class="nav__link underline-one" href="./index.html#docs"
+                        >Документация</a
+                    >
+                </div>
+                <div>
+                    <a
+                        class="nav__link underline-one"
+                        href="./index.html#partners"
+                        >Партнеры</a
+                    >
+                </div>
+                <div>
+                    <a
+                        class="nav__link underline-one"
+                        href="./index.html#feedback"
+                        >Обратная связь</a
+                    >
+                </div>
+                <div>
+                    <a
+                        class="nav__link underline-one"
+                        href="./index.html#contacts"
+                        >Контакты</a
+                    >
+                </div>
+
+                <div class="burger__phone">
+                    <a class="nav__link" href="tel:+7 (863) 256-85-88"
+                        >+7 (863) 256-85-88</a
+                    >
+                </div>
+            </div>
+        </nav>
+        <!-- <header class="header header__hide header__opacity">
             <div class="container">
                 <div class="header__inner">
                     <div class="header__logo">
@@ -75,7 +144,7 @@
                         <a
                             class="nav__link underline-one"
                             href="./index.html#about"
-                            >О нас</a
+                            >О компании</a
                         >
                         <a
                             class="nav__link underline-one"
@@ -99,6 +168,11 @@
                         >
                         <a
                             class="nav__link underline-one"
+                            href="./index.html#feedback"
+                            >Обратная связь</a
+                        >
+                        <a
+                            class="nav__link underline-one"
                             href="./index.html#contacts"
                             >Контакты</a
                         >
@@ -109,72 +183,10 @@
                     <div class="burger__open" onclick="openBurger()">
                         <img src="assets/open.svg" alt="open" />
                     </div>
-                    <nav class="burger">
-                        <div class="burger__close" onclick="closeBurger()">
-                            <img src="assets/close.svg" alt="close" />
-                        </div>
-                        <div class="burger__links">
-                            <div>
-                                <a
-                                    class="nav__link underline-one"
-                                    href="./index.html#main"
-                                    >Главная</a
-                                >
-                            </div>
-                            <div>
-                                <a
-                                    class="nav__link underline-one"
-                                    href="./index.html#about"
-                                    >О нас</a
-                                >
-                            </div>
-                            <div>
-                                <a
-                                    class="nav__link underline-one"
-                                    href="./index.html#products"
-                                    >Продукция</a
-                                >
-                            </div>
-                            <div>
-                                <a
-                                    class="nav__link underline-one"
-                                    href="./index.html#projects"
-                                    >Проекты</a
-                                >
-                            </div>
-                            <div>
-                                <a
-                                    class="nav__link underline-one"
-                                    href="./index.html#docs"
-                                    >Документация</a
-                                >
-                            </div>
-                            <div>
-                                <a
-                                    class="nav__link underline-one"
-                                    href="./index.html#partners"
-                                    >Партнеры</a
-                                >
-                            </div>
-                            <div>
-                                <a
-                                    class="nav__link underline-one"
-                                    href="./index.html#contacts"
-                                    >Контакты</a
-                                >
-                            </div>
-                            <div class="burger__phone">
-                                <a
-                                    class="nav__link"
-                                    href="tel:+7 (863) 256-85-88"
-                                    >+7 (863) 256-85-88</a
-                                >
-                            </div>
-                        </div>
-                    </nav>
                 </div>
             </div>
-        </header>
+        </header> -->
+
         <main class="main" id="main">
             <div class="main__animation">
                 <img
@@ -183,37 +195,193 @@
                     alt="logo"
                 />
             </div>
-            <div class="container">
-                <div class="main__inner" data-aos="zoom-up">
-                    <h3>ИННОВАЦИОННЫЕ РЕШЕНИЯ В СТРОИТЕЛЬСТВЕ</h3>
-                    <h1>AGAT-M</h1>
-                    <div class="main__text">
-                        <p>Производство железобетонных изделий</p>
-                        <p>
-                            Поставка электротехнической и химической продукции
-                        </p>
+            <div class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__logo">
+                            <a href="./index.html">
+                                <img src="assets/logo_x512.png" alt="logo" />
+                            </a>
+                        </div>
+                        <nav class="menu">
+                            <a
+                                class="nav__link underline-one"
+                                href="./index.html#main"
+                                >Главная</a
+                            >
+                            <a
+                                class="nav__link underline-one"
+                                href="./index.html#about"
+                                >О компании</a
+                            >
+                            <a
+                                class="nav__link underline-one"
+                                href="./index.html#products"
+                                >Продукция</a
+                            >
+                            <a
+                                class="nav__link underline-one"
+                                href="./index.html#projects"
+                                >Проекты</a
+                            >
+                            <a
+                                class="nav__link underline-one"
+                                href="./index.html#docs"
+                                >Документация</a
+                            >
+                            <a
+                                class="nav__link underline-one"
+                                href="./index.html#partners"
+                                >Партнеры</a
+                            >
+                            <a
+                                class="nav__link underline-one"
+                                href="./index.html#feedback"
+                                >Обратная связь</a
+                            >
+                            <a
+                                class="nav__link underline-one"
+                                href="./index.html#contacts"
+                                >Контакты</a
+                            >
+                        </nav>
+                        <div class="header__phone">
+                            <a href="tel:+7 (863) 256-85-88"
+                                >+7 (863) 256-85-88</a
+                            >
+                        </div>
+                        <div class="burger__open" onclick="openBurger()">
+                            <img src="assets/open.svg" alt="open" />
+                        </div>
                     </div>
-                    <div class="main__progress">
-                        <div class="main__item">
-                            <div>> <span class="main__number1">0</span></div>
-                            <p>опыт работы</p>
+                </div>
+            </div>
+            <!-- <div class="header2">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__logo">
+                            <a href="./index.html">
+                                <img
+                                    src="assets/logo_x512_white.png"
+                                    alt="logo"
+                                />
+                            </a>
                         </div>
-                        <div class="main__item">
-                            <div>> <span class="main__number2">0</span></div>
-                            <p>успешные проекты</p>
+                        <nav class="menu">
+                            <a
+                                class="nav__link underline-one"
+                                href="./index.html#main"
+                                >Главная</a
+                            >
+                            <a
+                                class="nav__link underline-one"
+                                href="./index.html#about"
+                                >О компании</a
+                            >
+                            <a
+                                class="nav__link underline-one"
+                                href="./index.html#products"
+                                >Продукция</a
+                            >
+                            <a
+                                class="nav__link underline-one"
+                                href="./index.html#projects"
+                                >Проекты</a
+                            >
+                            <a
+                                class="nav__link underline-one"
+                                href="./index.html#docs"
+                                >Документация</a
+                            >
+                            <a
+                                class="nav__link underline-one"
+                                href="./index.html#partners"
+                                >Партнеры</a
+                            >
+                            <a
+                                class="nav__link underline-one"
+                                href="./index.html#feedback"
+                                >Обратная связь</a
+                            >
+                            <a
+                                class="nav__link underline-one"
+                                href="./index.html#contacts"
+                                >Контакты</a
+                            >
+                        </nav>
+                        <div class="header__phone">
+                            <a href="tel:+7 (863) 256-85-88"
+                                >+7 (863) 256-85-88</a
+                            >
                         </div>
-                        <div class="main__item">
-                            <div>
-                                >
-                                <span class="main__number"> 0 </span>
-                                р.
+                        <div class="burger__open" onclick="openBurger()">
+                            <img src="assets/open.svg" alt="open" />
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="container">
+                <div class="swiper4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="main__inner" data-aos="fade-right">
+                                <h1>AGAT-M</h1>
+                                <h3>ИННОВАЦИОННЫЕ РЕШЕНИЯ В СТРОИТЕЛЬСТВЕ</h3>
+                                <div>
+                                    <a href="./index.html#products">
+                                        <button>
+                                            <img src="./images/right.svg" />
+                                            ПОСМОТРЕТЬ НАШУ ПРОДУКЦИЮ
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
-                            <p>опыт поставок</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main__inner" data-aos="fade-right">
+                                <div class="main__text">
+                                    <p>Производство железобетонных изделий</p>
+                                    <p>
+                                        Поставка электротехнической и химической
+                                        продукции
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="./index.html#products">
+                                        <button>
+                                            <img src="./images/right.svg" />
+                                            ПОСМОТРЕТЬ НАШУ ПРОДУКЦИЮ
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container__main">
+                <div class="controls">
+                    <div>
+                        <div class="carousel-progress">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="controls__inner">
+                            <div class="custom-prev back">
+                                <img src="./images/arrow2.svg" />
+                            </div>
+                            <div class="custom-pagination">
+                                <div class="swiper-pagination-current">0</div>
+                                <div class="swiper-pagination-total">0</div>
+                            </div>
+                            <div class="custom-next forward">
+                                <img src="./images/arrow1.svg" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+
         <section class="about" id="about">
             <div class="container">
                 <div class="about__inner">
@@ -223,7 +391,14 @@
                         инжиниринговых услуг в области проектирования и
                         строительства инженерной инфраструктуры объектов
                         нефтегазовой и нефтехимической отрасли, электросетевого
-                        комплекса и коммунальной сферы.
+                        комплекса и коммунальной сферы. <br />
+                        <br />
+                        Основной деятельностью компании является производство и
+                        поставка железобетонных труб для микротоннелирования
+                        торговой марки «AGAT-M» согласно ТУ
+                        23.61.12-001-04284980-2018 внутренним диаметром 600,
+                        800, 1000, 1200, 1400, 1500, 1600, 1660, 1700, 1800,
+                        1960, 2000, 2200, 2400 и 2500 мм.
                     </p>
                     <div class="about__line"></div>
                     <div class="about__link">
@@ -255,14 +430,242 @@
                 </div>
             </div>
         </section>
+        <section class="stat" id="stat">
+            <div class="container">
+                <div class="stat__inner">
+                    <h2 data-aos="fade-right">Наша статистика</h2>
+                    <div class="stat__info">
+                        <div class="stat__col1">
+                            <div class="stat1">
+                                <h3>Проектирование, производство, поставка</h3>
+                            </div>
+                            <div class="stat2">
+                                <div class="stat_icon">
+                                    <img
+                                        src="./assets/map.svg"
+                                        alt="map_russia"
+                                    />
+                                </div>
+                                <div class="stat__col1_cont">
+                                    <div class="stat__more">
+                                        <img src="./assets/icons/more.svg" />
+                                        <span class="main__number3">0</span>
+                                    </div>
+                                    <p>
+                                        объекта <br />
+                                        по России <br />
+                                        и странам СНГ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat__col2">
+                            <div>
+                                <article class="stat__more">
+                                    <img src="./assets/icons/more.svg" />
+                                    <span class="main__number1">0</span>
+                                    <span>ЛЕТ</span>
+                                </article>
+                                <p>опыта работы</p>
+                            </div>
+                            <div>
+                                <article class="stat__more">
+                                    <img src="./assets/icons/more.svg" />
+                                    <span class="main__number2">0</span>
+                                </article>
+                                <p>успешных проектов</p>
+                            </div>
+                            <div>
+                                <article class="stat__more">
+                                    <img src="./assets/icons/more.svg" />
+                                    <span class="main__number">0</span>
+                                    <span>₽</span>
+                                </article>
+                                <p>опыт поставок</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="products" id="products">
             <div class="container">
                 <div class="products__inner">
                     <h2>Продукция</h2>
+                    <div class="products__listMain" data-aos="fade-up">
+                        <div class="products_listMain__inner">
+                            <div class="products__cardMain">
+                                <img src="assets/products/jb.png" />
+                                <h4>
+                                    Железобетонные трубы «AGAT-M» <br />
+                                    для микротонеллирования <br /><br />
+                                    ТУ 23.61.12-001-04284980-2018
+                                </h4>
+                                <div class="products__linkMain">
+                                    <a href="./product1.html">
+                                        <div>Подробнее</div>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="30"
+                                            height="30"
+                                            viewBox="0 0 30 30"
+                                            fill="none"
+                                        >
+                                            <circle
+                                                cx="15"
+                                                cy="15"
+                                                r="14.5"
+                                                stroke="#242424"
+                                            ></circle>
+                                            <path
+                                                d="M20.3536 15.3536C20.5488 15.1583 20.5488 14.8417 20.3536 14.6464L17.1716 11.4645C16.9763 11.2692 16.6597 11.2692 16.4645 11.4645C16.2692 11.6597 16.2692 11.9763 16.4645 12.1716L19.2929 15L16.4645 17.8284C16.2692 18.0237 16.2692 18.3403 16.4645 18.5355C16.6597 18.7308 16.9763 18.7308 17.1716 18.5355L20.3536 15.3536ZM9 15.5L20 15.5V14.5L9 14.5V15.5Z"
+                                                fill="#242424"
+                                            ></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__list2">
+                            <div class="products__card products__cardMin">
+                                <img src="assets/products/shaht.png" alt="" />
+                                <h4>
+                                    Изделия для строительства шахтных стволов
+                                </h4>
+
+                                <p>Плиты опускного колодца</p>
+                                <p>
+                                    Опускное железобетонное крепление для шахт
+                                </p>
+                                <div class="products__link">
+                                    <a href="./product2.html">
+                                        <div>Подробнее</div>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="30"
+                                            height="30"
+                                            viewBox="0 0 30 30"
+                                            fill="none"
+                                        >
+                                            <circle
+                                                cx="15"
+                                                cy="15"
+                                                r="14.5"
+                                                stroke="#242424"
+                                            ></circle>
+                                            <path
+                                                d="M20.3536 15.3536C20.5488 15.1583 20.5488 14.8417 20.3536 14.6464L17.1716 11.4645C16.9763 11.2692 16.6597 11.2692 16.4645 11.4645C16.2692 11.6597 16.2692 11.9763 16.4645 12.1716L19.2929 15L16.4645 17.8284C16.2692 18.0237 16.2692 18.3403 16.4645 18.5355C16.6597 18.7308 16.9763 18.7308 17.1716 18.5355L20.3536 15.3536ZM9 15.5L20 15.5V14.5L9 14.5V15.5Z"
+                                                fill="#242424"
+                                            ></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products__card products__cardMin">
+                                <img
+                                    src="assets/products/composit.png"
+                                    alt=""
+                                />
+                                <h4>
+                                    Композитные трубы <br />
+                                    <br />
+                                </h4>
+                                <p>Микротоннелирование</p>
+                                <p>Водоснабжение</p>
+                                <p>Водоотведение</p>
+                                <div class="products__link">
+                                    <a href="./product3.html">
+                                        <div>Подробнее</div>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="30"
+                                            height="30"
+                                            viewBox="0 0 30 30"
+                                            fill="none"
+                                        >
+                                            <circle
+                                                cx="15"
+                                                cy="15"
+                                                r="14.5"
+                                                stroke="#242424"
+                                            ></circle>
+                                            <path
+                                                d="M20.3536 15.3536C20.5488 15.1583 20.5488 14.8417 20.3536 14.6464L17.1716 11.4645C16.9763 11.2692 16.6597 11.2692 16.4645 11.4645C16.2692 11.6597 16.2692 11.9763 16.4645 12.1716L19.2929 15L16.4645 17.8284C16.2692 18.0237 16.2692 18.3403 16.4645 18.5355C16.6597 18.7308 16.9763 18.7308 17.1716 18.5355L20.3536 15.3536ZM9 15.5L20 15.5V14.5L9 14.5V15.5Z"
+                                                fill="#242424"
+                                            ></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products__card products__cardMin">
+                                <img src="assets/products/electro.png" alt="" />
+                                <h4>Электротехническая продукция</h4>
+                                <p>Кабельно-проводниковая продукция</p>
+                                <p>Кабеленесущие системы</p>
+                                <p>Прожекторные мачты</p>
+
+                                <div class="products__link">
+                                    <a href="./product4.html">
+                                        <div>Подробнее</div>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="30"
+                                            height="30"
+                                            viewBox="0 0 30 30"
+                                            fill="none"
+                                        >
+                                            <circle
+                                                cx="15"
+                                                cy="15"
+                                                r="14.5"
+                                                stroke="#242424"
+                                            ></circle>
+                                            <path
+                                                d="M20.3536 15.3536C20.5488 15.1583 20.5488 14.8417 20.3536 14.6464L17.1716 11.4645C16.9763 11.2692 16.6597 11.2692 16.4645 11.4645C16.2692 11.6597 16.2692 11.9763 16.4645 12.1716L19.2929 15L16.4645 17.8284C16.2692 18.0237 16.2692 18.3403 16.4645 18.5355C16.6597 18.7308 16.9763 18.7308 17.1716 18.5355L20.3536 15.3536ZM9 15.5L20 15.5V14.5L9 14.5V15.5Z"
+                                                fill="#242424"
+                                            ></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products__card products__cardMin">
+                                <img src="assets/products/him.png" alt="" />
+                                <h4>Химическая продукция <br /><br /></h4>
+                                <p>Продукция для добычи и переработки нефти</p>
+                                <p>Продукция для добычи и переработки газа</p>
+                                <div class="products__link">
+                                    <a href="./product5.html">
+                                        <div>Подробнее</div>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="30"
+                                            height="30"
+                                            viewBox="0 0 30 30"
+                                            fill="none"
+                                        >
+                                            <circle
+                                                cx="15"
+                                                cy="15"
+                                                r="14.5"
+                                                stroke="#242424"
+                                            ></circle>
+                                            <path
+                                                d="M20.3536 15.3536C20.5488 15.1583 20.5488 14.8417 20.3536 14.6464L17.1716 11.4645C16.9763 11.2692 16.6597 11.2692 16.4645 11.4645C16.2692 11.6597 16.2692 11.9763 16.4645 12.1716L19.2929 15L16.4645 17.8284C16.2692 18.0237 16.2692 18.3403 16.4645 18.5355C16.6597 18.7308 16.9763 18.7308 17.1716 18.5355L20.3536 15.3536ZM9 15.5L20 15.5V14.5L9 14.5V15.5Z"
+                                                fill="#242424"
+                                            ></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="products__list" data-aos="fade-up">
                         <div class="products__card">
-                            <img src="assets/products/jb.png" alt="product1" />
-                            <h4>Железобетонные трубы «AGAT-M»</h4>
+                            <img src="assets/products/jb.png" />
+                            <h4>
+                                Железобетонные трубы «AGAT-M» <br />
+                                ТУ 23.61.12-001-04284980-2018
+                            </h4>
                             <p>Микротоннелирование</p>
                             <p>Футляры газопроводов</p>
                             <p>Водоотведение</p>
@@ -294,7 +697,6 @@
                         <div class="products__card">
                             <img src="assets/products/shaht.png" alt="" />
                             <h4>Изделия для строительства шахтных стволов</h4>
-                            <p>Металлоконструкции</p>
                             <p>Плиты опускного колодца</p>
                             <p>Опускное железобетонное крепление для шахт</p>
                             <div class="products__link">
@@ -356,10 +758,7 @@
                             <h4>Электротехническая продукция</h4>
                             <p>Кабельно-проводниковая продукция</p>
                             <p>Кабеленесущие системы</p>
-                            <p>Взрывозащищенное оборудование</p>
                             <p>Прожекторные мачты</p>
-                            <p>Светотехническая продукция</p>
-                            <p>Продукция OSTEC</p>
                             <div class="products__link">
                                 <a href="./product4.html">
                                     <div>Подробнее</div>
@@ -424,7 +823,7 @@
                         <h2>Реализованные проекты</h2>
                         <div class="projects__link">
                             <a href="./allProjects.html">
-                                <div>Подробнее о проектах</div>
+                                <div>Все проекты</div>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="30"
@@ -450,32 +849,22 @@
                     <div class="projects__swiper">
                         <div class="swiper-button-prev2" id="swiperPrev">
                             <svg
+                                xmlns="http://www.w3.org/2000/svg"
                                 width="30"
                                 height="30"
                                 viewBox="0 0 30 30"
                                 fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
                             >
-                                <g clip-path="url(#clip0_7_6)">
-                                    <path
-                                        d="M15 0.5C6.99187 0.5 0.5 6.99187 0.5 15C0.5 23.0081 6.99187 29.5 15 29.5C23.0081 29.5 29.5 23.0081 29.5 15C29.5 6.99187 23.0081 0.5 15 0.5Z"
-                                        stroke="#242424"
-                                    />
-                                    <path
-                                        d="M9.6464 14.6464C9.4512 14.8417 9.4512 15.1583 9.6464 15.3536L12.8284 18.5355C13.0237 18.7308 13.3403 18.7308 13.5355 18.5355C13.7308 18.3403 13.7308 18.0237 13.5355 17.8284L10.7071 15L13.5355 12.1716C13.7308 11.9763 13.7308 11.6597 13.5355 11.4645C13.3403 11.2692 13.0237 11.2692 12.8284 11.4645L9.6464 14.6464ZM21 14.5L10 14.5V15.5L21 15.5V14.5Z"
-                                        fill="#242424"
-                                    />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_7_6">
-                                        <rect
-                                            width="30"
-                                            height="30"
-                                            fill="white"
-                                            transform="matrix(-1 0 0 -1 30 30)"
-                                        />
-                                    </clipPath>
-                                </defs>
+                                <circle
+                                    cx="15"
+                                    cy="15"
+                                    r="14.5"
+                                    stroke="#242424"
+                                ></circle>
+                                <path
+                                    d="M20.3536 15.3536C20.5488 15.1583 20.5488 14.8417 20.3536 14.6464L17.1716 11.4645C16.9763 11.2692 16.6597 11.2692 16.4645 11.4645C16.2692 11.6597 16.2692 11.9763 16.4645 12.1716L19.2929 15L16.4645 17.8284C16.2692 18.0237 16.2692 18.3403 16.4645 18.5355C16.6597 18.7308 16.9763 18.7308 17.1716 18.5355L20.3536 15.3536ZM9 15.5L20 15.5V14.5L9 14.5V15.5Z"
+                                    fill="#242424"
+                                ></path>
                             </svg>
                         </div>
                         <div class="swiper swiper2">
@@ -485,294 +874,316 @@
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/test.jpeg"
+                                        src="assets/projects/1/1.jpg"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        «Строительство канализационного
-                                        коллектора №62 в городе Ростове-на-Дону
-                                        Этап II.I»
-                                    </h4>
-                                    <p class="projects__text">
-                                        МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ
-                                        "УПРАВЛЕНИЕ КАПИТАЛЬНОГО СТРОИТЕЛЬСТВА
-                                        ГОРОДА РОСТОВА-НА-ДОНУ"
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Канализационный коллектор №62 этап
+                                            II.I в г. Ростове-на-Дону
+                                        </h4>
+                                        <a
+                                            href="./project1.html"
+                                            class="projects__text"
+                                        >
+                                            <img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/test.jpeg"
+                                        src="assets/projects/2/1.jpg"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        Магистральный газопровод «Сила Сибири».
-                                        Участок «Ковыкта – Чаянда». Устройство
-                                        тоннельных переходов под р. Лена
-                                        (основная и резервная нитки) методом
-                                        микротоннелирования
-                                    </h4>
-                                    <p class="projects__text">
-                                        OOO «ГСП-Комплектация»
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Магистральный газопровод «Сила
+                                            Сибири». Участок «Ковыкта – Чаянда»
+                                        </h4>
+                                        <a
+                                            href="./project2.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/project3.jpeg"
+                                        src="assets/projects/3/1.jpg"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        Магистральный трубопровод «Уфа –
-                                        западное направление», участок
-                                        НИКУЛИНО-ПЕНЗА, DN 530, КМ 870,9 -
-                                        878,1. РЕКОНСТРУКЦИЯ
-                                    </h4>
-                                    <p class="projects__text">
-                                        ПАО "Транснефть"
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Нефтепровод «Уфа-Западное
+                                            направление»
+                                        </h4>
+                                        <a
+                                            href="./project3.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/test.jpeg"
+                                        src="assets/projects/4/1.jpg"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        «Мероприятия по строительству системы
-                                        водоподачи в восточной части Крымского
-                                        полуострова, в том числе строительство
-                                        тракта водоподачи от Насосной станции с.
-                                        Октябрьское, до площадки станции очистки
-                                        воды г. Феодосии с подачей в РЧВ, с
-                                        предусматриваемыми сбросами в
-                                        Северо-Крымский канал» 1-й этап.
-                                    </h4>
-                                    <p class="projects__text">
-                                        АО «Объединенная Энергостроительная
-                                        Корпорация»
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Система водоподачи Крымского
+                                            полуострова этап 2.1
+                                        </h4>
+                                        <a
+                                            href="./project4.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/project5.jpeg"
+                                        src="assets/projects/5/1.jpg"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        «Внеплощадочный коллектор промливневых
-                                        стоков (ХЗК-3)»
-                                    </h4>
-                                    <p class="projects__text">
-                                        ПАО «Нижнекамскнефтехим»
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Промышленная ливневая канализация в
+                                            г. Нижнекамск
+                                        </h4>
+                                        <a
+                                            href="./project5.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/test.jpeg"
+                                        src="assets/projects/6/1.webp"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        «Мероприятия по строительству системы
-                                        водоподачи в восточной части Крымского
-                                        полуострова, в том числе строительство
-                                        тракта водоподачи от Насосной станции с.
-                                        Октябрьское, до площадки станции очистки
-                                        воды г. Феодосии с подачей в РЧВ, с
-                                        предусматриваемыми сбросами в
-                                        Северо-Крымский канал» 2-й этап.
-                                    </h4>
-                                    <p class="projects__text">
-                                        АО «Объединенная Энергостроительная
-                                        Корпорация»
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Система водоподачи Крымского
+                                            полуострова этап 2.2
+                                        </h4>
+                                        <a
+                                            href="./project6.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/test.jpeg"
+                                        src="assets/projects/7/1.jpeg"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        «Реконструкция канализационного
-                                        коллектора L=2452 м.п. Д=800/1000 мм на
-                                        Ду=1000 мм по ул. Землячки 9-11, по ул.
-                                        Витрука, вдоль Ленинского проспекта до
-                                        ул. 25 Января 72 (инв.№ 30012510 –
-                                        «Канализационные сети железнорожного
-                                        района»). Участок L=582,28 м (колодцы
-                                        К1-К8, К25-К26)»
-                                    </h4>
-                                    <p class="projects__text">
-                                        ООО «РВК-Воронеж»
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Канализационный коллектор г. Воронеж
+                                        </h4>
+                                        <a
+                                            href="./project7.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/project8.jpeg"
+                                        src="assets/projects/8/1.jpeg"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        «Реконструкция самотечного коллектора
-                                        Д=800 мм на Д=1000 мм, по ул. Сарьяна в
-                                        направлении ул. Мясникова от ул. 31-я
-                                        линия до ул. 11-я линия»
-                                    </h4>
-                                    <p class="projects__text">
-                                        АО «Ростовводоканал»
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Самотечный коллектор по ул. Сарьяна
+                                            в г. Ростове-на-Дону
+                                        </h4>
+                                        <a
+                                            href="./project8.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/test.jpeg"
+                                        src="assets/projects/9/1.jpg"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        Выполнение работ 2-го этапа
-                                        строительства городского магистрального
-                                        хозфекального коллектора (от КНС мкр.
-                                        №51 через ул. Белкинская, Энгельса и
-                                        Красных Зорь до городских очистных
-                                        сооружений) в г.Обнинске Калужской
-                                        области
-                                    </h4>
-                                    <p class="projects__text">
-                                        МКУ «Городское строительство»
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Хозфекальный коллектор в г. Обнинске
+                                        </h4>
+                                        <a
+                                            href="./project9.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/test.jpeg"
+                                        src="assets/projects/10/1.webp"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        «Строительство и реконструкция
-                                        автомобильной дороги Керчь - Феодосия -
-                                        Белогорск - Симферополь - Бахчисарай –
-                                        Севастополь, км 269+300 до а/д
-                                        Ялта-Севастополь, 8-й этап»
-                                    </h4>
-                                    <p class="projects__text">
-                                        АО «ВАД» Обособленное подразделение
-                                        «Севастополь»
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Реконструкция автодороги «Таврида» 8
+                                            этап
+                                        </h4>
+                                        <a
+                                            href="./project10.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/project11.jpeg"
+                                        src="assets/projects/11/1.webp"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        «Внеплощадочные сети ХПВ «В1», УЧК «К2»,
-                                        ХЗК «К7», ХФК «К1» до точек подключения
-                                        объекта Нового комплекса по производству
-                                        Этилена ЭП-600»
-                                    </h4>
-                                    <p class="projects__text">
-                                        ПАО «Нижнекамскнефтехим»
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Строительство комплекса по
+                                            производству Этилена ЭП-600 ПАО
+                                            «НКНХ»
+                                        </h4>
+                                        <a
+                                            href="./project11.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/test.jpeg"
+                                        src="assets/projects/12/1.jpg"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        «Строительство канализационного
-                                        коллектора №62 в городе Ростове-на-Дону
-                                        Этап II.II»
-                                    </h4>
-                                    <p class="projects__text">
-                                        МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ
-                                        "УПРАВЛЕНИЕ КАПИТАЛЬНОГО СТРОИТЕЛЬСТВА
-                                        ГОРОДА РОСТОВА-НА-ДОНУ"
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Канализационный коллектор №62 этап
+                                            II.II в г. Ростове-на-Дону
+                                        </h4>
+                                        <a
+                                            href="./project12.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/project13.jpg"
+                                        src="assets/projects/13/1.webp"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        «Реконструкция самотечного
-                                        канализационного коллектора Д 1600 мм по
-                                        ул. П. Л. Морозова на участке пер.
-                                        Инский - пер. Спортивный»
-                                    </h4>
-                                    <p class="projects__text">
-                                        МУП ГОРОДА ХАБАРОВСКА «ВОДОКАНАЛ»
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Реконструкция самотечного
+                                            канализационного коллектора в
+                                            Хабаровске
+                                        </h4>
+                                        <a
+                                            href="./project13.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/project14.jpeg"
+                                        src="assets/projects/14/1.jpg"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        «Реконструкция канализационного
-                                        коллектора Д=1000мм по пер. Ухтомский от
-                                        д. №33 до ул. Казахская, 103»
-                                    </h4>
-                                    <p class="projects__text">
-                                        АО «ВОДОКАНАЛСТРОЙКОМПЛЕКТ»
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Коллектор по ул. Ухтомской в г.
+                                            Ростове-на-Дону
+                                        </h4>
+                                        <a
+                                            href="./project14.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/project15.jpeg"
+                                        src="assets/projects/15/1.webp"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        «Реконструкция главного самотечного
-                                        коллектора Д=1200 мм с увеличением
-                                        диаметра до 1500 мм в границах пр.
-                                        Строителей - пр. Химиков до ул.
-                                        Менделеева в городе Энгельсе Саратовской
-                                        области»
-                                    </h4>
-                                    <p class="projects__text">
-                                        МУНИЦИПАЛЬНОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ
-                                        "ЭНГЕЛЬС-ВОДОКАНАЛ ЭНГЕЛЬССКОГО
-                                        МУНИЦИПАЛЬНОГО ОБРАЗОВАНИЯ САРАТОВСКОЙ
-                                        ОБЛАСТИ"
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Реконструкция главного самотечного
+                                            коллектора в городе Энгельсе
+                                        </h4>
+                                        <a
+                                            href="./project15.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
 
                                 <div
@@ -780,140 +1191,169 @@
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/project16.jpeg"
+                                        src="assets/projects/16/1.webp"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        «Комплексная реконструкция участка
-                                        Котельниково — Тихорецкая — Кореновск —
-                                        Тимашевская — Крымская с обходом
-                                        Краснодарского узла Северо-Кавказской
-                                        железной дороги. Этап2. Строительство
-                                        главных путей направления
-                                        Сальск-Краснодар.»
-                                    </h4>
-                                    <p class="projects__text">
-                                        ДКРС-Юг ОАО «РЖД»
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Железобетонный футляр под железной
+                                            дорогой в г. Тихорецке
+                                        </h4>
+                                        <a
+                                            href="./project16.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/project17.jpeg"
+                                        src="assets/projects/17/1.webp"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        Газопровод-отвод от магистрального
-                                        газопровода «Ленинград – Выборг –
-                                        Госграница» к комплексу сжижения
-                                        природного газа в Выборгском районе
-                                        Ленинградской области – порт Высоцк
-                                    </h4>
-                                    <p class="projects__text">ЗАО «Криогаз»</p>
+                                    <div>
+                                        <h4>
+                                            Газопровод Ленинград - Выборг –
+                                            Госграница
+                                        </h4>
+                                        <a
+                                            href="./project17.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/project18.jpeg"
+                                        src="assets/projects/18/1.webp"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        Газопровод-отвод и ГРС Врангель
-                                        Приморского края (1-2 этапы. Название
-                                        объекта: «Строительство
-                                        газопровода-отвода от точки подключения
-                                        в газопровод-отвод на ГРС-1 Владивосток
-                                        до точки подключения газопровода-отвода
-                                        на ГРС Большой Камень Приморского края)»
-                                    </h4>
-                                    <p class="projects__text">
-                                        ОАО «Газпром газораспределение» АО
-                                        «Газпром газораспределение дальний
-                                        восток»
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Футляры газопровода для ГРС Врангель
+                                            Приморского края
+                                        </h4>
+                                        <a
+                                            href="./project18.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/project19.jpeg"
+                                        src="assets/projects/19/1.webp"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        Устройство 2-х ниток микротоннеля на
-                                        переходе через железную дорогу км 1373,5
-                                        магистрального газопровода на объектах,
-                                        входящих в Этап 2.6 Участок «КС-5
-                                        «Нагорная» - КС-6 «Сковородинская» км
-                                        1290,7 – км 1550» в составе стройки
-                                        «Магистральный газопровод «Сила Сибири»
-                                        (код стройки 033- 2000973)
-                                    </h4>
-                                    <p class="projects__text">
-                                        ООО «СТРОЙГАЗМОНТАЖ»
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Тоннельные переходы через железную
+                                            дорогу в составе стройки МГ «Сила
+                                            Сибири»
+                                        </h4>
+                                        <a
+                                            href="./project19.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/test.jpeg"
+                                        src="assets/projects/20/1.webp"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        Реконструкция участка канализационного
-                                        коллектора от ул. Фабричной до пр.
-                                        Партизанского. г.Минск
-                                    </h4>
-                                    <p class="projects__text">
-                                        Коммунальное инжиниринговое унитарное
-                                        предприятие «Гордорстрой»
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Реконструкция участка
+                                            канализационного коллектора г. Минск
+                                        </h4>
+                                        <a
+                                            href="./project20.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/test.jpeg"
+                                        src="assets/projects/21/1.webp"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        «Проектирование и строительство участка
-                                        канализационного коллектора Д=1500 мм от
-                                        отводящих трубопроводов КНС "Внуково" до
-                                        подводящего канала КНС
-                                        «Ново-Солнцевская» (участок от камеры
-                                        К-25/40 до камеры К-0)
-                                    </h4>
-                                    <p class="projects__text">
-                                        Государственное казенное учреждение
-                                        города Москвы «Москворечье»
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            Строительство участка
+                                            канализационного коллектора от
+                                            трубопроводов КНС «Внуково» до
+                                            канала КНС «Ново-Солнцевская»
+                                        </h4>
+                                        <a
+                                            href="./project21.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                                 <div
                                     class="projects__card swiper-slide"
                                     data-aos="fade-up"
                                 >
                                     <img
-                                        src="assets/projects/test.jpeg"
+                                        src="assets/projects/22/1.jpeg"
                                         alt="project1"
                                     />
-                                    <h4>
-                                        Магистральный газопровод «Сила Сибири».
-                                        СТНГ-2028.1-ЛС-СТ, Участок
-                                        «Ковыкта-Чаянда» Этап 1. Линейная часть
-                                        газопровода.
-                                    </h4>
-                                    <p class="projects__text">
-                                        АО «СтройТрансНефтеГаз»
-                                    </p>
+                                    <div>
+                                        <h4>
+                                            МГ «Сила Сибири». Участок «Ковыкта –
+                                            Чаянда». Этап 1. Линейная часть
+                                            газопровода
+                                        </h4>
+                                        <a
+                                            href="./project22.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="projects__card swiper-slide"
+                                    data-aos="fade-up"
+                                >
+                                    <img
+                                        src="assets/projects/23/1.png"
+                                        alt="project1"
+                                    />
+                                    <div>
+                                        <h4>Мостовой переход через р. Обь</h4>
+                                        <a
+                                            href="./project23.html"
+                                            class="projects__text"
+                                            ><img src="./images/right2.svg" />
+                                            Подробнее</a
+                                        >
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-scrollbar"></div>
@@ -1170,32 +1610,22 @@
                 <div class="partners__swiper" data-aos="zoom-in">
                     <div class="swiper-button-prev1" id="swiperPrev1">
                         <svg
+                            xmlns="http://www.w3.org/2000/svg"
                             width="30"
                             height="30"
                             viewBox="0 0 30 30"
                             fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
                         >
-                            <g clip-path="url(#clip0_7_6)">
-                                <path
-                                    d="M15 0.5C6.99187 0.5 0.5 6.99187 0.5 15C0.5 23.0081 6.99187 29.5 15 29.5C23.0081 29.5 29.5 23.0081 29.5 15C29.5 6.99187 23.0081 0.5 15 0.5Z"
-                                    stroke="#242424"
-                                />
-                                <path
-                                    d="M9.6464 14.6464C9.4512 14.8417 9.4512 15.1583 9.6464 15.3536L12.8284 18.5355C13.0237 18.7308 13.3403 18.7308 13.5355 18.5355C13.7308 18.3403 13.7308 18.0237 13.5355 17.8284L10.7071 15L13.5355 12.1716C13.7308 11.9763 13.7308 11.6597 13.5355 11.4645C13.3403 11.2692 13.0237 11.2692 12.8284 11.4645L9.6464 14.6464ZM21 14.5L10 14.5V15.5L21 15.5V14.5Z"
-                                    fill="#242424"
-                                />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_7_6">
-                                    <rect
-                                        width="30"
-                                        height="30"
-                                        fill="white"
-                                        transform="matrix(-1 0 0 -1 30 30)"
-                                    />
-                                </clipPath>
-                            </defs>
+                            <circle
+                                cx="15"
+                                cy="15"
+                                r="14.5"
+                                stroke="#242424"
+                            ></circle>
+                            <path
+                                d="M20.3536 15.3536C20.5488 15.1583 20.5488 14.8417 20.3536 14.6464L17.1716 11.4645C16.9763 11.2692 16.6597 11.2692 16.4645 11.4645C16.2692 11.6597 16.2692 11.9763 16.4645 12.1716L19.2929 15L16.4645 17.8284C16.2692 18.0237 16.2692 18.3403 16.4645 18.5355C16.6597 18.7308 16.9763 18.7308 17.1716 18.5355L20.3536 15.3536ZM9 15.5L20 15.5V14.5L9 14.5V15.5Z"
+                                fill="#242424"
+                            ></path>
                         </svg>
                     </div>
                     <div class="swiper swiper1 partners-swiper">
@@ -1203,50 +1633,120 @@
                             <div class="partner__card swiper-slide">
                                 <img
                                     class="slider-img1"
-                                    src="assets/partners/logo-white.png"
+                                    src="assets/partners/1.png"
                                     alt="partner1"
                                 />
                             </div>
                             <div class="partner__card swiper-slide">
                                 <img
                                     class="slider-img2"
-                                    src="assets/partners/par-logo-7.jpg"
+                                    src="assets/partners/2.jpg"
                                     alt="partner2"
                                 />
                             </div>
                             <div class="partner__card swiper-slide">
                                 <img
                                     class="slider-img3"
-                                    src="assets/partners/part-logo1.png"
+                                    src="assets/partners/3.png"
                                     alt="partner3"
                                 />
                             </div>
                             <div class="partner__card swiper-slide">
                                 <img
                                     class="slider-img4"
-                                    src="assets/partners/part-logo2.png"
+                                    src="assets/partners/4.png"
                                     alt="partner4"
                                 />
                             </div>
                             <div class="partner__card swiper-slide">
                                 <img
                                     class="slider-img5"
-                                    src="assets/partners/part-logo3.png"
+                                    src="assets/partners/5.png"
                                     alt="partner5"
                                 />
                             </div>
                             <div class="partner__card swiper-slide">
                                 <img
                                     class="slider-img6"
-                                    src="assets/partners/part-logo4.png"
+                                    src="assets/partners/6.png"
                                     alt="partner6"
                                 />
                             </div>
                             <div class="partner__card swiper-slide">
                                 <img
                                     class="slider-img7"
-                                    src="assets/partners/part-logo5.png"
+                                    src="assets/partners/7.png"
                                     alt="partner7"
+                                />
+                            </div>
+                            <div class="partner__card swiper-slide">
+                                <img
+                                    class="slider-img8"
+                                    src="assets/partners/8.png"
+                                    alt="partner8"
+                                />
+                            </div>
+                            <div class="partner__card swiper-slide">
+                                <img
+                                    class="slider-img9"
+                                    src="assets/partners/9.png"
+                                    alt="partner9"
+                                />
+                            </div>
+                            <div class="partner__card swiper-slide">
+                                <img
+                                    class="slider-img10"
+                                    src="assets/partners/10.png"
+                                    alt="partner10"
+                                />
+                            </div>
+                            <div class="partner__card swiper-slide">
+                                <img
+                                    class="slider-img11"
+                                    src="assets/partners/11.png"
+                                    alt="partner11"
+                                />
+                            </div>
+                            <div class="partner__card swiper-slide">
+                                <img
+                                    class="slider-img12"
+                                    src="assets/partners/12.png"
+                                    alt="partner12"
+                                />
+                            </div>
+                            <div class="partner__card swiper-slide">
+                                <img
+                                    class="slider-img13"
+                                    src="assets/partners/13.png"
+                                    alt="partner13"
+                                />
+                            </div>
+                            <div class="partner__card swiper-slide">
+                                <img
+                                    class="slider-img14"
+                                    src="assets/partners/14.png"
+                                    alt="partner14"
+                                />
+                            </div>
+                            <div class="partner__card swiper-slide">
+                                <img
+                                    class="slider-img15"
+                                    src="assets/partners/15.png"
+                                    alt="partner15"
+                                />
+                            </div>
+                            <div class="partner__card swiper-slide">
+                                <img
+                                    class="slider-img16"
+                                    src="assets/partners/16.png"
+                                    alt="partner16"
+                                />
+                            </div>
+                            <div class="partner__card swiper-slide">
+                                <img
+                                    class="slider-img17"
+                                    src="assets/partners/17.png"
+                                    alt="partner17"
                                 />
                             </div>
                         </div>
@@ -1305,38 +1805,57 @@
                         <div class="news__list">
                             <div class="news__card" data-aos="fade-up">
                                 <div class="news__img">
-                                    <img
-                                        src="assets/news/news1.jpg"
-                                        alt="news1"
-                                    />
+                                    <img src="assets/news/1.jpg" alt="news1" />
                                 </div>
                                 <div class="news__text">
-                                    <h4>Проектирование железобетонных труб</h4>
+                                    <h4>
+                                        Труба газопровода «Сила Сибири»
+                                        соединила два берега реки Лена
+                                    </h4>
                                     <p>
-                                        Компания Агат-Трейд оказывает
-                                        комплексные услуги по проектированию
-                                        железобетонных труб для строительства
-                                        инженерной инфраструктуры.
+                                        В феврале 2022 года ООО «Агат-Трейд»
+                                        завершило поставку железобетонных труб
+                                        марки «AGAT-M» диаметром 2000/2500 мм в
+                                        адрес ООО «ГСП-Комплектация» для
+                                        реализации проекта строительства
+                                        магистрального газопровода «Сила
+                                        Сибири». На участке «Ковыкта — Чаянда»
+                                        был построен рекордный 1,5-километровый
+                                        тоннельный переход под рекой Леной с
+                                        уникальным, самым большим перепадом
+                                        высот между точкой входа в стартовом
+                                        котловане и точкой выхода в приемном
+                                        котловане— 157,94 метров.
+                                        Зафиксированный результат занесен в
+                                        Книгу рекордов России. Применение
+                                        данного решения обеспечило сохранность
+                                        местной экосистемы и археологических
+                                        артефактов на пути следования
+                                        газопровода.
                                     </p>
                                 </div>
                             </div>
                             <div class="news__card" data-aos="fade-up">
                                 <div class="news__img">
-                                    <img
-                                        src="assets/news/news2.jpg"
-                                        alt="news1"
-                                    />
+                                    <img src="assets/news/2.jpg" alt="news1" />
                                 </div>
                                 <div class="news__text">
-                                    <h4>
-                                        Железобетонные трубы для
-                                        микротоннелирования
-                                    </h4>
+                                    <h4>Хабаровск опутают микротоннелями</h4>
                                     <p>
-                                        Компания Агат-Трейд предлагает купить
-                                        железобетонные трубы для
-                                        микротоннелирования ТС серии
-                                        собственного производства.
+                                        В Хабаровске завершили работы по
+                                        прокладке нового канализационного
+                                        коллектора на улице Павла Морозова.
+                                        Первый в Хабаровском крае опыт прокладки
+                                        канализационного коллектора методом
+                                        микротоннелирования был завершен
+                                        успешно. Тоннель из 193 железобетонных
+                                        труб марки «AGAT-M» диаметром 2000/2500
+                                        мм прокладывался на участке от переулка
+                                        Инского до переулка Спортивного. Трубы
+                                        усиленной конструкции были специально
+                                        изготовлены специалистами ООО
+                                        «Агат-Трейд» по заказу МУП города
+                                        Хабаровска «Водоканал».
                                     </p>
                                 </div>
                             </div>
@@ -1345,8 +1864,93 @@
                 </section>
             </div>
         </section>
+        <section class="feedback" id="feedback">
+            <div class="container">
+                <div class="feedback__inner">
+                    <h2>Обратная связь</h2>
+                    <p>
+                        Чем мы можем вам помочь? Опишите свою задачу или задайте
+                        вопрос, заполнив поля ниже. Наш специалист свяжется с
+                        вами и ответит на все ваши вопросы.
+                    </p>
+                    <form action="send.php" method="post" id="form">
+                        <div class="feedback__inputs">
+                            <div class="feedback__left">
+                                <div>
+                                    <input
+                                        id="name"
+                                        name="name"
+                                        type="text"
+                                        placeholder="ваше имя"
+                                        required="required"
+                                        data-reg="^[А-ЯЁ][а-яё]*$"
+                                    />
+                                </div>
+                                <div>
+                                    <input
+                                        id="phone"
+                                        name="phone"
+                                        type="text"
+                                        placeholder="телефон"
+                                        required="required"
+                                        data-reg="^((\+7|7|8)+([0-9]){10})$"
+                                    />
+                                </div>
+                                <div>
+                                    <input
+                                        id="email"
+                                        name="email"
+                                        type="email"
+                                        placeholder="e-mail"
+                                        required="required"
+                                        data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+                                    />
+                                </div>
+                                <div>
+                                    <input
+                                        id="company"
+                                        name="company"
+                                        type="text"
+                                        placeholder="компания"
+                                        required="required"
+                                        data-reg="^[А-ЯЁ][а-яё]*$"
+                                    />
+                                </div>
+                            </div>
+                            <div class="feedback__right">
+                                <div>
+                                    <textarea
+                                        name="message"
+                                        placeholder="Информация о проекте или вопрос"
+                                    ></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback__inputs">
+                            <div class="feedback__left">
+                                <div class="feedback__tar">
+                                    <button type="submit">Отправить</button>
+                                </div>
+                            </div>
+                            <div class="feedback__right">
+                                <div class="feedback__conf">
+                                    Нажимая кнопку «Отправить», я даю свое
+                                    <a href="./policy.html">согласие</a>
+                                    на обработку моих персональных данных, в
+                                    соответствии с Федеральным законом от
+                                    27.07.2006 года №152-ФЗ «О персональных
+                                    данных», на условиях и для целей,
+                                    определенных в Согласии на обработку
+                                    персональных данных.
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
 
-        <footer class="footer" id="contacts" data-aos="fade-up">
+        <footer class="footer" id="contacts">
             <div class="container">
                 <div class="footer__inner">
                     <img src="assets/logo_x512.png" alt="logo" />
@@ -1354,114 +1958,240 @@
                     <div class="footer__list">
                         <div class="footer__card">
                             <p>
-                                <img
-                                    src="assets/footer/phone.svg"
-                                    alt="phone"
-                                /><a href="tel:+7 (863) 256-85-88"
-                                    >+7 (863) 256-85-88</a
+                                <a href="tel:+7 (863) 256-85-88">
+                                    <svg
+                                        width="34"
+                                        height="34"
+                                        viewBox="0 0 34 34"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M33.5 17C33.5 26.1127 26.1127 33.5 17 33.5C7.8873 33.5 0.5 26.1127 0.5 17C0.5 7.8873 7.8873 0.5 17 0.5C26.1127 0.5 33.5 7.8873 33.5 17Z"
+                                            stroke="#0000FF"
+                                        />
+                                        <path
+                                            d="M25.9638 22.1719C25.9158 22.027 25.6098 21.8135 25.0462 21.5321C24.8936 21.4434 24.676 21.3228 24.3945 21.1698C24.1128 21.0169 23.8571 20.8759 23.6278 20.7471C23.3981 20.6183 23.1828 20.4936 22.9818 20.373C22.9496 20.3489 22.849 20.2786 22.68 20.1616C22.5108 20.045 22.3681 19.9584 22.2511 19.9019C22.1344 19.8458 22.0197 19.8176 21.907 19.8176C21.746 19.8176 21.5449 19.9323 21.3035 20.1616C21.0622 20.3911 20.8407 20.6405 20.6396 20.9103C20.4384 21.1801 20.225 21.4294 19.9999 21.6589C19.7744 21.8884 19.5891 22.003 19.4444 22.003C19.3717 22.003 19.2811 21.9827 19.1726 21.9428C19.0641 21.9026 18.9815 21.8681 18.9248 21.8403C18.8687 21.8119 18.7723 21.7558 18.6354 21.671C18.4982 21.5865 18.4219 21.5402 18.4058 21.5321C17.303 20.9202 16.3573 20.2199 15.5683 19.4313C14.7797 18.6423 14.0792 17.6967 13.4675 16.5939C13.4594 16.5778 13.4131 16.5013 13.3286 16.3645C13.244 16.2276 13.1876 16.1312 13.1595 16.0747C13.1313 16.0184 13.0971 15.9358 13.0569 15.8272C13.0167 15.7186 12.9966 15.6281 12.9966 15.5555C12.9966 15.4107 13.1113 15.2255 13.3407 15.0001C13.5701 14.7749 13.8197 14.5615 14.0893 14.3604C14.3591 14.1593 14.6084 13.9379 14.8379 13.6965C15.0673 13.455 15.182 13.2539 15.182 13.0929C15.182 12.9803 15.1538 12.8655 15.0975 12.7488C15.0412 12.6319 14.9547 12.4892 14.8379 12.3201C14.7211 12.1511 14.6507 12.0505 14.6265 12.0182C14.5059 11.8171 14.3812 11.6018 14.2523 11.3724C14.1233 11.143 13.9826 10.8873 13.8296 10.6057C13.6767 10.3241 13.556 10.1067 13.4674 9.95378C13.1858 9.39045 12.9725 9.08445 12.8276 9.03633C12.7712 9.01218 12.6867 9 12.5741 9C12.3566 9 12.0729 9.04017 11.7228 9.12078C11.3725 9.20125 11.0969 9.28566 10.8957 9.37434C10.4932 9.54328 10.0666 10.0343 9.61576 10.8471C9.20524 11.6035 9 12.3523 9 13.0927C9 13.3098 9.01408 13.5211 9.04225 13.7266C9.07041 13.9318 9.12074 14.1632 9.19327 14.4209C9.26567 14.6784 9.32408 14.8697 9.36823 14.9943C9.41242 15.119 9.49493 15.3423 9.61572 15.6644C9.73633 15.9863 9.80886 16.1834 9.83301 16.2559C10.1147 17.0447 10.4488 17.749 10.8351 18.3688C11.4707 19.399 12.3382 20.4637 13.4369 21.5625C14.5357 22.6611 15.6002 23.5285 16.6306 24.1643C17.2504 24.5506 17.9549 24.8846 18.7437 25.1665C18.8162 25.1905 19.0133 25.2629 19.3352 25.3839C19.6572 25.5046 19.8806 25.5871 20.0053 25.6314C20.13 25.6757 20.3214 25.7341 20.5787 25.8067C20.8366 25.8792 21.0679 25.9295 21.2731 25.9579C21.4785 25.9857 21.6898 26 21.907 26C22.6474 26 23.3962 25.7946 24.1529 25.3842C24.9657 24.9336 25.4566 24.5069 25.6256 24.1042C25.7145 23.9031 25.7987 23.6274 25.8792 23.2772C25.9599 22.9271 26 22.6435 26 22.4261C26.0002 22.3131 25.9881 22.2287 25.9638 22.1719Z"
+                                            fill="#0000FF"
+                                        />
+                                    </svg>
+
+                                    <span>+7 (863) 256-85-88</span></a
                                 >
                             </p>
                             <p>
-                                <img
-                                    src="assets/footer/phone.svg"
-                                    alt="phone2"
-                                /><a href="tel:+7 (903) 406-85-88"
-                                    >+7 (903) 406-85-88</a
+                                <a href="tel:+7 (903) 406-85-88">
+                                    <svg
+                                        width="34"
+                                        height="34"
+                                        viewBox="0 0 34 34"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M33.5 17C33.5 26.1127 26.1127 33.5 17 33.5C7.8873 33.5 0.5 26.1127 0.5 17C0.5 7.8873 7.8873 0.5 17 0.5C26.1127 0.5 33.5 7.8873 33.5 17Z"
+                                            stroke="#0000FF"
+                                        />
+                                        <path
+                                            d="M25.9638 22.1719C25.9158 22.027 25.6098 21.8135 25.0462 21.5321C24.8936 21.4434 24.676 21.3228 24.3945 21.1698C24.1128 21.0169 23.8571 20.8759 23.6278 20.7471C23.3981 20.6183 23.1828 20.4936 22.9818 20.373C22.9496 20.3489 22.849 20.2786 22.68 20.1616C22.5108 20.045 22.3681 19.9584 22.2511 19.9019C22.1344 19.8458 22.0197 19.8176 21.907 19.8176C21.746 19.8176 21.5449 19.9323 21.3035 20.1616C21.0622 20.3911 20.8407 20.6405 20.6396 20.9103C20.4384 21.1801 20.225 21.4294 19.9999 21.6589C19.7744 21.8884 19.5891 22.003 19.4444 22.003C19.3717 22.003 19.2811 21.9827 19.1726 21.9428C19.0641 21.9026 18.9815 21.8681 18.9248 21.8403C18.8687 21.8119 18.7723 21.7558 18.6354 21.671C18.4982 21.5865 18.4219 21.5402 18.4058 21.5321C17.303 20.9202 16.3573 20.2199 15.5683 19.4313C14.7797 18.6423 14.0792 17.6967 13.4675 16.5939C13.4594 16.5778 13.4131 16.5013 13.3286 16.3645C13.244 16.2276 13.1876 16.1312 13.1595 16.0747C13.1313 16.0184 13.0971 15.9358 13.0569 15.8272C13.0167 15.7186 12.9966 15.6281 12.9966 15.5555C12.9966 15.4107 13.1113 15.2255 13.3407 15.0001C13.5701 14.7749 13.8197 14.5615 14.0893 14.3604C14.3591 14.1593 14.6084 13.9379 14.8379 13.6965C15.0673 13.455 15.182 13.2539 15.182 13.0929C15.182 12.9803 15.1538 12.8655 15.0975 12.7488C15.0412 12.6319 14.9547 12.4892 14.8379 12.3201C14.7211 12.1511 14.6507 12.0505 14.6265 12.0182C14.5059 11.8171 14.3812 11.6018 14.2523 11.3724C14.1233 11.143 13.9826 10.8873 13.8296 10.6057C13.6767 10.3241 13.556 10.1067 13.4674 9.95378C13.1858 9.39045 12.9725 9.08445 12.8276 9.03633C12.7712 9.01218 12.6867 9 12.5741 9C12.3566 9 12.0729 9.04017 11.7228 9.12078C11.3725 9.20125 11.0969 9.28566 10.8957 9.37434C10.4932 9.54328 10.0666 10.0343 9.61576 10.8471C9.20524 11.6035 9 12.3523 9 13.0927C9 13.3098 9.01408 13.5211 9.04225 13.7266C9.07041 13.9318 9.12074 14.1632 9.19327 14.4209C9.26567 14.6784 9.32408 14.8697 9.36823 14.9943C9.41242 15.119 9.49493 15.3423 9.61572 15.6644C9.73633 15.9863 9.80886 16.1834 9.83301 16.2559C10.1147 17.0447 10.4488 17.749 10.8351 18.3688C11.4707 19.399 12.3382 20.4637 13.4369 21.5625C14.5357 22.6611 15.6002 23.5285 16.6306 24.1643C17.2504 24.5506 17.9549 24.8846 18.7437 25.1665C18.8162 25.1905 19.0133 25.2629 19.3352 25.3839C19.6572 25.5046 19.8806 25.5871 20.0053 25.6314C20.13 25.6757 20.3214 25.7341 20.5787 25.8067C20.8366 25.8792 21.0679 25.9295 21.2731 25.9579C21.4785 25.9857 21.6898 26 21.907 26C22.6474 26 23.3962 25.7946 24.1529 25.3842C24.9657 24.9336 25.4566 24.5069 25.6256 24.1042C25.7145 23.9031 25.7987 23.6274 25.8792 23.2772C25.9599 22.9271 26 22.6435 26 22.4261C26.0002 22.3131 25.9881 22.2287 25.9638 22.1719Z"
+                                            fill="#0000FF"
+                                        />
+                                    </svg>
+
+                                    <span>+7 (903) 406-85-88</span></a
                                 >
                             </p>
                             <p>
-                                <img
-                                    src="assets/footer/mail.svg"
-                                    alt="mail"
-                                /><a
-                                    target="_blank"
-                                    href="mailto:info@agat-m.ru"
-                                    >info@agat-m.ru</a
+                                <a target="_blank" href="mailto:info@agat-m.ru">
+                                    <svg
+                                        width="34"
+                                        height="34"
+                                        viewBox="0 0 34 34"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M33.5 17C33.5 26.1127 26.1127 33.5 17 33.5C7.8873 33.5 0.5 26.1127 0.5 17C0.5 7.8873 7.8873 0.5 17 0.5C26.1127 0.5 33.5 7.8873 33.5 17Z"
+                                            stroke="#0000FF"
+                                        />
+                                        <path
+                                            d="M26 21.8333C26 22.2133 25.8952 22.5655 25.7272 22.8755L20.3596 16.7521L25.669 12.0158C25.8756 12.35 26 12.7425 26 13.1668V21.8333ZM17.5 17.8639L24.8879 11.273C24.5847 11.1038 24.2433 11 23.875 11H11.125C10.7563 11 10.4148 11.1038 10.1128 11.273L17.5 17.8639ZM19.5597 17.4652L17.8496 18.9918C17.7496 19.0806 17.625 19.125 17.5 19.125C17.3749 19.125 17.2504 19.0806 17.1504 18.9918L15.4399 17.4651L10.0044 23.6667C10.3302 23.8751 10.712 24 11.125 24H23.875C24.2879 24 24.6699 23.8751 24.9956 23.6667L19.5597 17.4652ZM9.33102 12.0158C9.12452 12.3499 9 12.7425 9 13.1668V21.8333C9 22.2133 9.10434 22.5656 9.2729 22.8755L14.6399 16.7511L9.33102 12.0158Z"
+                                            fill="#0000FF"
+                                        />
+                                    </svg>
+                                    <span>info@agat-m.ru</span></a
                                 >
                             </p>
                             <p>
-                                <img
-                                    src="assets/footer/telegram.svg"
-                                    alt="telegram"
-                                /><a
+                                <a
                                     target="_blank"
                                     href="https://web.telegram.org/k/#@agat_m"
-                                    >Telegram</a
+                                >
+                                    <svg
+                                        width="34"
+                                        height="34"
+                                        viewBox="0 0 34 34"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M33.5 17C33.5 26.1127 26.1127 33.5 17 33.5C7.8873 33.5 0.5 26.1127 0.5 17C0.5 7.8873 7.8873 0.5 17 0.5C26.1127 0.5 33.5 7.8873 33.5 17Z"
+                                            stroke="#2BA6E1"
+                                        />
+                                        <path
+                                            d="M23.875 10.0448L8.375 16.0448C7.875 16.2448 7.875 16.9448 8.375 17.1448L12.275 18.3448L13.775 23.0448C13.975 23.5448 14.575 23.6448 14.875 23.3448L16.875 21.2448L20.875 24.1448C21.375 24.5448 22.075 24.2448 22.175 23.6448L24.975 10.9448C25.075 10.3448 24.475 9.84479 23.875 10.0448ZM21.875 12.8448L14.675 19.2448C14.575 19.3448 14.575 19.4448 14.575 19.4448L14.275 21.9448C14.275 22.0448 14.175 22.0448 14.175 21.9448L13.075 18.2448C12.975 18.0448 13.075 17.8448 13.275 17.8448L21.775 12.5448C21.875 12.4448 22.075 12.7448 21.875 12.8448Z"
+                                            fill="#2BA6E1"
+                                        />
+                                    </svg>
+                                    <span>Telegram</span></a
                                 >
                             </p>
-                            <p>
-                                <img
-                                    src="assets/footer/whatsapp.svg"
-                                    alt="whatsapp"
-                                /><a
+                            <p class="footer__whatsapp">
+                                <a
                                     target="_blank"
                                     href="https://api.whatsapp.com/send?phone=89094408079"
-                                    >WhatsApp</a
                                 >
-                            </p>
-                            <p>
-                                <img
-                                    src="assets/feedback.svg"
-                                    alt="feedback"
-                                /><a onclick="openModal()">Обратная связь</a>
+                                    <svg
+                                        width="34"
+                                        height="34"
+                                        viewBox="0 0 34 34"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M33.5 17C33.5 26.1127 26.1127 33.5 17 33.5C7.8873 33.5 0.5 26.1127 0.5 17C0.5 7.8873 7.8873 0.5 17 0.5C26.1127 0.5 33.5 7.8873 33.5 17Z"
+                                            stroke="#28E56E"
+                                        />
+                                        <path
+                                            d="M21.8002 19.3C21.3002 18.8 20.6002 18.8 20.1002 19.3C19.7002 19.7 19.3002 20.1 18.9002 20.5C18.8002 20.6 18.7002 20.6 18.6002 20.6C18.4002 20.5 18.1002 20.4 17.8002 20.2C16.6002 19.5 15.7002 18.5 14.8002 17.5C14.4002 17 14.0002 16.4 13.8002 15.8C13.7002 15.7 13.7002 15.6 13.9002 15.5C14.3002 15.1 14.7002 14.7 15.1002 14.3C15.6002 13.8 15.6002 13.1 15.1002 12.5C14.8002 12.2 14.5002 11.9 14.1002 11.5C13.8002 11.2 13.4002 10.8 13.1002 10.5C12.6002 10 11.9002 10 11.4002 10.5C11.0002 10.9 10.6002 11.3 10.2002 11.7C9.80023 12.1 9.60023 12.5 9.60023 13C9.50023 13.8 9.70023 14.6 10.0002 15.4C10.6002 17 11.5002 18.4 12.6002 19.7C14.1002 21.5 15.9002 22.8 17.9002 23.8C18.9002 24.2 19.8002 24.6 20.9002 24.7C21.6002 24.8 22.2002 24.6 22.8002 24C23.2002 23.6 23.5002 23.3 23.9002 22.9C24.4002 22.4 24.4002 21.7 23.9002 21.1C23.1002 20.6 22.4002 20 21.8002 19.3Z"
+                                            fill="#28E56E"
+                                        />
+                                    </svg>
+
+                                    <span>WhatsApp</span></a
+                                >
                             </p>
                         </div>
                     </div>
                     <div class="footer__list2">
                         <div class="footer__card2">
                             <p>
-                                <img
-                                    src="assets/footer/phone.svg"
-                                    alt="phone"
-                                /><a href="tel:+7 (863) 256-85-88"
-                                    >+7 (863) 256-85-88</a
+                                <a href="tel:+7 (863) 256-85-88">
+                                    <svg
+                                        width="34"
+                                        height="34"
+                                        viewBox="0 0 34 34"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M33.5 17C33.5 26.1127 26.1127 33.5 17 33.5C7.8873 33.5 0.5 26.1127 0.5 17C0.5 7.8873 7.8873 0.5 17 0.5C26.1127 0.5 33.5 7.8873 33.5 17Z"
+                                            stroke="#0000FF"
+                                        />
+                                        <path
+                                            d="M25.9638 22.1719C25.9158 22.027 25.6098 21.8135 25.0462 21.5321C24.8936 21.4434 24.676 21.3228 24.3945 21.1698C24.1128 21.0169 23.8571 20.8759 23.6278 20.7471C23.3981 20.6183 23.1828 20.4936 22.9818 20.373C22.9496 20.3489 22.849 20.2786 22.68 20.1616C22.5108 20.045 22.3681 19.9584 22.2511 19.9019C22.1344 19.8458 22.0197 19.8176 21.907 19.8176C21.746 19.8176 21.5449 19.9323 21.3035 20.1616C21.0622 20.3911 20.8407 20.6405 20.6396 20.9103C20.4384 21.1801 20.225 21.4294 19.9999 21.6589C19.7744 21.8884 19.5891 22.003 19.4444 22.003C19.3717 22.003 19.2811 21.9827 19.1726 21.9428C19.0641 21.9026 18.9815 21.8681 18.9248 21.8403C18.8687 21.8119 18.7723 21.7558 18.6354 21.671C18.4982 21.5865 18.4219 21.5402 18.4058 21.5321C17.303 20.9202 16.3573 20.2199 15.5683 19.4313C14.7797 18.6423 14.0792 17.6967 13.4675 16.5939C13.4594 16.5778 13.4131 16.5013 13.3286 16.3645C13.244 16.2276 13.1876 16.1312 13.1595 16.0747C13.1313 16.0184 13.0971 15.9358 13.0569 15.8272C13.0167 15.7186 12.9966 15.6281 12.9966 15.5555C12.9966 15.4107 13.1113 15.2255 13.3407 15.0001C13.5701 14.7749 13.8197 14.5615 14.0893 14.3604C14.3591 14.1593 14.6084 13.9379 14.8379 13.6965C15.0673 13.455 15.182 13.2539 15.182 13.0929C15.182 12.9803 15.1538 12.8655 15.0975 12.7488C15.0412 12.6319 14.9547 12.4892 14.8379 12.3201C14.7211 12.1511 14.6507 12.0505 14.6265 12.0182C14.5059 11.8171 14.3812 11.6018 14.2523 11.3724C14.1233 11.143 13.9826 10.8873 13.8296 10.6057C13.6767 10.3241 13.556 10.1067 13.4674 9.95378C13.1858 9.39045 12.9725 9.08445 12.8276 9.03633C12.7712 9.01218 12.6867 9 12.5741 9C12.3566 9 12.0729 9.04017 11.7228 9.12078C11.3725 9.20125 11.0969 9.28566 10.8957 9.37434C10.4932 9.54328 10.0666 10.0343 9.61576 10.8471C9.20524 11.6035 9 12.3523 9 13.0927C9 13.3098 9.01408 13.5211 9.04225 13.7266C9.07041 13.9318 9.12074 14.1632 9.19327 14.4209C9.26567 14.6784 9.32408 14.8697 9.36823 14.9943C9.41242 15.119 9.49493 15.3423 9.61572 15.6644C9.73633 15.9863 9.80886 16.1834 9.83301 16.2559C10.1147 17.0447 10.4488 17.749 10.8351 18.3688C11.4707 19.399 12.3382 20.4637 13.4369 21.5625C14.5357 22.6611 15.6002 23.5285 16.6306 24.1643C17.2504 24.5506 17.9549 24.8846 18.7437 25.1665C18.8162 25.1905 19.0133 25.2629 19.3352 25.3839C19.6572 25.5046 19.8806 25.5871 20.0053 25.6314C20.13 25.6757 20.3214 25.7341 20.5787 25.8067C20.8366 25.8792 21.0679 25.9295 21.2731 25.9579C21.4785 25.9857 21.6898 26 21.907 26C22.6474 26 23.3962 25.7946 24.1529 25.3842C24.9657 24.9336 25.4566 24.5069 25.6256 24.1042C25.7145 23.9031 25.7987 23.6274 25.8792 23.2772C25.9599 22.9271 26 22.6435 26 22.4261C26.0002 22.3131 25.9881 22.2287 25.9638 22.1719Z"
+                                            fill="#0000FF"
+                                        />
+                                    </svg>
+
+                                    <span>+7 (863) 256-85-88</span></a
                                 >
                             </p>
                             <p>
-                                <img
-                                    src="assets/footer/phone.svg"
-                                    alt="phone2"
-                                /><a href="tel:+7 (903) 406-85-88"
-                                    >+7 (903) 406-85-88</a
+                                <a href="tel:+7 (903) 406-85-88">
+                                    <svg
+                                        width="34"
+                                        height="34"
+                                        viewBox="0 0 34 34"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M33.5 17C33.5 26.1127 26.1127 33.5 17 33.5C7.8873 33.5 0.5 26.1127 0.5 17C0.5 7.8873 7.8873 0.5 17 0.5C26.1127 0.5 33.5 7.8873 33.5 17Z"
+                                            stroke="#0000FF"
+                                        />
+                                        <path
+                                            d="M25.9638 22.1719C25.9158 22.027 25.6098 21.8135 25.0462 21.5321C24.8936 21.4434 24.676 21.3228 24.3945 21.1698C24.1128 21.0169 23.8571 20.8759 23.6278 20.7471C23.3981 20.6183 23.1828 20.4936 22.9818 20.373C22.9496 20.3489 22.849 20.2786 22.68 20.1616C22.5108 20.045 22.3681 19.9584 22.2511 19.9019C22.1344 19.8458 22.0197 19.8176 21.907 19.8176C21.746 19.8176 21.5449 19.9323 21.3035 20.1616C21.0622 20.3911 20.8407 20.6405 20.6396 20.9103C20.4384 21.1801 20.225 21.4294 19.9999 21.6589C19.7744 21.8884 19.5891 22.003 19.4444 22.003C19.3717 22.003 19.2811 21.9827 19.1726 21.9428C19.0641 21.9026 18.9815 21.8681 18.9248 21.8403C18.8687 21.8119 18.7723 21.7558 18.6354 21.671C18.4982 21.5865 18.4219 21.5402 18.4058 21.5321C17.303 20.9202 16.3573 20.2199 15.5683 19.4313C14.7797 18.6423 14.0792 17.6967 13.4675 16.5939C13.4594 16.5778 13.4131 16.5013 13.3286 16.3645C13.244 16.2276 13.1876 16.1312 13.1595 16.0747C13.1313 16.0184 13.0971 15.9358 13.0569 15.8272C13.0167 15.7186 12.9966 15.6281 12.9966 15.5555C12.9966 15.4107 13.1113 15.2255 13.3407 15.0001C13.5701 14.7749 13.8197 14.5615 14.0893 14.3604C14.3591 14.1593 14.6084 13.9379 14.8379 13.6965C15.0673 13.455 15.182 13.2539 15.182 13.0929C15.182 12.9803 15.1538 12.8655 15.0975 12.7488C15.0412 12.6319 14.9547 12.4892 14.8379 12.3201C14.7211 12.1511 14.6507 12.0505 14.6265 12.0182C14.5059 11.8171 14.3812 11.6018 14.2523 11.3724C14.1233 11.143 13.9826 10.8873 13.8296 10.6057C13.6767 10.3241 13.556 10.1067 13.4674 9.95378C13.1858 9.39045 12.9725 9.08445 12.8276 9.03633C12.7712 9.01218 12.6867 9 12.5741 9C12.3566 9 12.0729 9.04017 11.7228 9.12078C11.3725 9.20125 11.0969 9.28566 10.8957 9.37434C10.4932 9.54328 10.0666 10.0343 9.61576 10.8471C9.20524 11.6035 9 12.3523 9 13.0927C9 13.3098 9.01408 13.5211 9.04225 13.7266C9.07041 13.9318 9.12074 14.1632 9.19327 14.4209C9.26567 14.6784 9.32408 14.8697 9.36823 14.9943C9.41242 15.119 9.49493 15.3423 9.61572 15.6644C9.73633 15.9863 9.80886 16.1834 9.83301 16.2559C10.1147 17.0447 10.4488 17.749 10.8351 18.3688C11.4707 19.399 12.3382 20.4637 13.4369 21.5625C14.5357 22.6611 15.6002 23.5285 16.6306 24.1643C17.2504 24.5506 17.9549 24.8846 18.7437 25.1665C18.8162 25.1905 19.0133 25.2629 19.3352 25.3839C19.6572 25.5046 19.8806 25.5871 20.0053 25.6314C20.13 25.6757 20.3214 25.7341 20.5787 25.8067C20.8366 25.8792 21.0679 25.9295 21.2731 25.9579C21.4785 25.9857 21.6898 26 21.907 26C22.6474 26 23.3962 25.7946 24.1529 25.3842C24.9657 24.9336 25.4566 24.5069 25.6256 24.1042C25.7145 23.9031 25.7987 23.6274 25.8792 23.2772C25.9599 22.9271 26 22.6435 26 22.4261C26.0002 22.3131 25.9881 22.2287 25.9638 22.1719Z"
+                                            fill="#0000FF"
+                                        />
+                                    </svg>
+
+                                    <span>+7 (903) 406-85-88</span></a
                                 >
                             </p>
                             <p>
-                                <img
-                                    src="assets/footer/mail.svg"
-                                    alt="mail"
-                                /><a
-                                    target="_blank"
-                                    href="mailto:info@agat-m.ru"
-                                    >info@agat-m.ru</a
+                                <a target="_blank" href="mailto:info@agat-m.ru">
+                                    <svg
+                                        width="34"
+                                        height="34"
+                                        viewBox="0 0 34 34"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M33.5 17C33.5 26.1127 26.1127 33.5 17 33.5C7.8873 33.5 0.5 26.1127 0.5 17C0.5 7.8873 7.8873 0.5 17 0.5C26.1127 0.5 33.5 7.8873 33.5 17Z"
+                                            stroke="#0000FF"
+                                        />
+                                        <path
+                                            d="M26 21.8333C26 22.2133 25.8952 22.5655 25.7272 22.8755L20.3596 16.7521L25.669 12.0158C25.8756 12.35 26 12.7425 26 13.1668V21.8333ZM17.5 17.8639L24.8879 11.273C24.5847 11.1038 24.2433 11 23.875 11H11.125C10.7563 11 10.4148 11.1038 10.1128 11.273L17.5 17.8639ZM19.5597 17.4652L17.8496 18.9918C17.7496 19.0806 17.625 19.125 17.5 19.125C17.3749 19.125 17.2504 19.0806 17.1504 18.9918L15.4399 17.4651L10.0044 23.6667C10.3302 23.8751 10.712 24 11.125 24H23.875C24.2879 24 24.6699 23.8751 24.9956 23.6667L19.5597 17.4652ZM9.33102 12.0158C9.12452 12.3499 9 12.7425 9 13.1668V21.8333C9 22.2133 9.10434 22.5656 9.2729 22.8755L14.6399 16.7511L9.33102 12.0158Z"
+                                            fill="#0000FF"
+                                        />
+                                    </svg>
+
+                                    <span>info@agat-m.ru</span></a
                                 >
                             </p>
                         </div>
                         <div class="footer__card2">
                             <p>
-                                <img
-                                    src="assets/footer/telegram.svg"
-                                    alt="telegram"
-                                /><a
+                                <a
                                     target="_blank"
                                     href="https://web.telegram.org/k/#@agat_m"
-                                    >Telegram</a
                                 >
+                                    <svg
+                                        width="34"
+                                        height="34"
+                                        viewBox="0 0 34 34"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M33.5 17C33.5 26.1127 26.1127 33.5 17 33.5C7.8873 33.5 0.5 26.1127 0.5 17C0.5 7.8873 7.8873 0.5 17 0.5C26.1127 0.5 33.5 7.8873 33.5 17Z"
+                                            stroke="#2BA6E1"
+                                        />
+                                        <path
+                                            d="M23.875 10.0448L8.375 16.0448C7.875 16.2448 7.875 16.9448 8.375 17.1448L12.275 18.3448L13.775 23.0448C13.975 23.5448 14.575 23.6448 14.875 23.3448L16.875 21.2448L20.875 24.1448C21.375 24.5448 22.075 24.2448 22.175 23.6448L24.975 10.9448C25.075 10.3448 24.475 9.84479 23.875 10.0448ZM21.875 12.8448L14.675 19.2448C14.575 19.3448 14.575 19.4448 14.575 19.4448L14.275 21.9448C14.275 22.0448 14.175 22.0448 14.175 21.9448L13.075 18.2448C12.975 18.0448 13.075 17.8448 13.275 17.8448L21.775 12.5448C21.875 12.4448 22.075 12.7448 21.875 12.8448Z"
+                                            fill="#2BA6E1"
+                                        />
+                                    </svg>
+
+                                    <span>Telegram</span>
+                                </a>
                             </p>
                             <p>
-                                <img
-                                    src="assets/footer/whatsapp.svg"
-                                    alt="whatsapp"
-                                /><a
+                                <a
                                     target="_blank"
                                     href="https://api.whatsapp.com/send?phone=89094408079"
-                                    >WhatsApp</a
                                 >
-                            </p>
-                            <p>
-                                <img
-                                    src="assets/feedback.svg"
-                                    alt="feedback"
-                                /><a onclick="openModal()">Обратная связь</a>
+                                    <svg
+                                        width="34"
+                                        height="34"
+                                        viewBox="0 0 34 34"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M33.5 17C33.5 26.1127 26.1127 33.5 17 33.5C7.8873 33.5 0.5 26.1127 0.5 17C0.5 7.8873 7.8873 0.5 17 0.5C26.1127 0.5 33.5 7.8873 33.5 17Z"
+                                            stroke="#28E56E"
+                                        />
+                                        <path
+                                            d="M21.8002 19.3C21.3002 18.8 20.6002 18.8 20.1002 19.3C19.7002 19.7 19.3002 20.1 18.9002 20.5C18.8002 20.6 18.7002 20.6 18.6002 20.6C18.4002 20.5 18.1002 20.4 17.8002 20.2C16.6002 19.5 15.7002 18.5 14.8002 17.5C14.4002 17 14.0002 16.4 13.8002 15.8C13.7002 15.7 13.7002 15.6 13.9002 15.5C14.3002 15.1 14.7002 14.7 15.1002 14.3C15.6002 13.8 15.6002 13.1 15.1002 12.5C14.8002 12.2 14.5002 11.9 14.1002 11.5C13.8002 11.2 13.4002 10.8 13.1002 10.5C12.6002 10 11.9002 10 11.4002 10.5C11.0002 10.9 10.6002 11.3 10.2002 11.7C9.80023 12.1 9.60023 12.5 9.60023 13C9.50023 13.8 9.70023 14.6 10.0002 15.4C10.6002 17 11.5002 18.4 12.6002 19.7C14.1002 21.5 15.9002 22.8 17.9002 23.8C18.9002 24.2 19.8002 24.6 20.9002 24.7C21.6002 24.8 22.2002 24.6 22.8002 24C23.2002 23.6 23.5002 23.3 23.9002 22.9C24.4002 22.4 24.4002 21.7 23.9002 21.1C23.1002 20.6 22.4002 20 21.8002 19.3Z"
+                                            fill="#28E56E"
+                                        />
+                                    </svg>
+
+                                    <span>WhatsApp</span></a
+                                >
                             </p>
                         </div>
                     </div>
@@ -1515,10 +2245,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="tn-elem">
-            <div class="tn-atom"></div>
-        </div>
         <section class="copyright">
             <div class="container">
                 <div class="copyright__inner">
@@ -1527,129 +2253,18 @@
             </div>
         </section>
         <div class="btn-up btn-up_hide" style="font-size: 30px"></div>
-        <div class="fab fab__hide">
-            <span class="fab-action-button">
-                <i class="fab-action-button__icon"></i>
-            </span>
-            <ul class="fab-buttons">
-                <li class="fab-buttons__item">
-                    <a
-                        href="https://web.telegram.org/k/#@agat_m"
-                        target="_blank"
-                        class="fab-buttons__link"
-                        data-tooltip="Telegram"
-                    >
-                        <img src="assets/telegram.png" alt="telegram" />
-                    </a>
-                </li>
-                <li class="fab-buttons__item">
-                    <a
-                        href="https://api.whatsapp.com/send?phone=89094408079"
-                        target="_blank"
-                        class="fab-buttons__link"
-                        data-tooltip="WhatsApp"
-                    >
-                        <img src="assets/whatsapp.png" alt="telegram" />
-                    </a>
-                </li>
-                <li class="fab-buttons__item openModal" onclick="openModal()">
-                    <a class="fab-buttons__link" data-tooltip="Обратная связь">
-                        <img src="assets/feedback.svg" alt="telegram" />
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div id="openModal" class="modal" onclick="closeModal()">
-            <div class="modal__dialog" onclick="event.stopPropagation()">
-                <div class="modal__content">
-                    <div class="modal__header">
-                        <div class="modal__close" ">
-                        <img
-                            onclick="closeModal()"
-                            src="assets/close2.svg"
-                            alt="closeModal"
-                        />
-                    </div>
-                    <div>
-                        <h3 class="modal-title">Обратная связь</h3>
-                    </div>
-                    <p>
-                        Поделитесь мнением о нашей работе или задайте нам любой
-                        интересующий вас вопрос в поле комментарий
-                    </p>
-                </div>
-                <form class="modal__form" id="form">
-                    <div>
-                        <input
-                            type="text"
-                            name="name"
-                            placeholder="Имя *"
-                            required="required"
-                            data-reg="^[А-ЯЁ][а-яё]*$"
-                        />
-                    </div>
-                    <div>
-                        <input
-                            type="text"
-                            name="surname"
-                            placeholder="Фамилия *"
-                            required="required"
-                            data-reg="^[А-ЯЁ][а-яё]*$"
-                        />
-                    </div>
-                    <div>
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="E-mail *"
-                            required="required"
-                            data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
-                        />
-                    </div>
-                    <div>
-                        <input
-                            type="number"
-                            name="phone"
-                            placeholder="Телефон *"
-                            required="required"
-                            data-reg="^((\+7|7|8)+([0-9]){10})$"
-                        />
-                    </div>
-                    <div>
-                        <textarea
-                            name="comment"
-                            id=""
-                            cols="30"
-                            rows="5"
-                            placeholder="Комментарий"
-                        ></textarea>
-                    </div>
-                    <!-- <p>* — обязательные для заполнения поля</p> -->
-                    <p class="modal__policy">
-                        Нажимая на кнопку, вы даете согласие на обработку своих
-                        персональных данных.
-                        <a href="policy.html">Политика конфиденциальности</a>.
-                    </p>
-                    <div class="modal__btn">
-                        <button class="big__btn" type="submit" id="button">
-                            Отправить
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
+        <script src="scripts/main.js"></script>
         <script src="scripts/burger.js" defer></script>
         <script src="scripts/btn-up.js" defer></script>
-        <script src="scripts/fab-up.js" defer></script>
+        <script src="scripts/header-up.js" defer></script>
         <script src="scripts/policy-up.js" defer></script>
         <script src="scripts/map.js" defer></script>
         <script src="scripts/modal.js" defer></script>
-        <script src="scripts/number.js" defer></script>
+        <script src="scripts/number.js"></script>
         <script src="scripts/swiper.js" defer></script>
         <script src="scripts/scroll.js"></script>
         <script src="scripts/lightbox.min.js"></script>

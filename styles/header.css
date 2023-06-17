@@ -6,21 +6,11 @@
     -webkit-box-shadow: 0px 1px 9px -2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 1px 9px -2px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 1px 9px -2px rgba(0, 0, 0, 0.75);
+    transition: all 0.3s ease;
 }
 
-.header__block {
-    opacity: 0.95;
-    animation: header__up 1s;
-}
-
-.header__opacity {
-    opacity: 0;
-}
-
-@keyframes header__up {
-    0% {
-        opacity: 0;
-    }
+.header__hide {
+    transform: translateY(-100%);
 }
 
 .header__inner {
@@ -36,14 +26,14 @@
 
 .nav__link {
     font-size: 16px;
-    color: #000;
+    color: #243746;
     margin: 0 15px;
     font-weight: 500;
 }
 
 .header__phone a {
     text-decoration: none;
-    color: #000;
+    color: #243746;
     font-weight: 500;
     font-size: 17px;
 }
@@ -68,22 +58,25 @@
 }
 
 .burger {
-    position: absolute;
+    position: fixed;
+    z-index: 10000;
     top: 0;
-    right: -450px;
+    right: 0;
+    transform: translateX(100%);
     min-width: 320px;
     background-color: #f8f6f6;
     border-radius: 10px 10px 10px;
+    color: #243746;
 }
 
 .open {
     transition: transform 0.5s ease-in-out;
-    transform: translate(-450px, 0);
+    transform: translate(0, 0);
 }
 
 .close {
     transition: transform 0.5s ease-in-out;
-    transform: translate(450px, 0);
+    transform: translate(100%, 0);
 }
 
 .burger__close {
@@ -120,7 +113,7 @@
     color: blue;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
     .menu {
         display: none;
     }
@@ -136,4 +129,22 @@
     .burger__open:hover {
         background-color: rgb(228, 228, 228);
     }
+}
+
+.header2 {
+    position: relative;
+    z-index: 1000;
+}
+
+.header2 .menu a {
+    color: #fff;
+}
+
+.header2 .header__phone a {
+    color: #fff;
+}
+
+.header2 .header__phone a:hover {
+    text-decoration: underline;
+    color: blue;
 }

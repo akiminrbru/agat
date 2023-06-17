@@ -1,22 +1,30 @@
 .about {
     min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 1440px) {
+    .about {
+        background-color: #fff;
+    }
 }
 
 .about__inner {
     padding-top: 100px;
     padding-bottom: 50px;
+    color: #243746;
 }
 
 .about__inner h2 {
     font-size: 36px;
-    color: rgb(40, 40, 40);
 }
 
 .about__text {
     margin-top: 30px;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     line-height: 1.5;
+    text-align: justify;
 }
 
 .about__line {
@@ -30,6 +38,7 @@
 }
 
 .about__link a {
+    color: #243746;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -39,11 +48,15 @@
 }
 
 .about__link a:hover svg {
-    fill: #000;
+    fill: #0044ff;
 }
 
 .about__link a:hover svg path {
-    fill: #fff;
+    fill: #ffffff;
+}
+
+.about__link a:hover svg circle {
+    stroke: #0044ff;
 }
 
 .about__imgs {
@@ -58,7 +71,7 @@
 }
 
 .about__img {
-    background-image: url("../assets/about/abouttest.jpg");
+    background-image: url("../assets/about/main.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

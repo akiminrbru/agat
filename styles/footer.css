@@ -1,8 +1,9 @@
 .footer {
     border-top: 1px solid rgb(192, 191, 191);
-    background-color: #f2f2f2;
+    background-color: #fafafa;
     padding-top: 50px;
     padding-bottom: 50px;
+    color: #243746;
 }
 
 .footer__inner img {
@@ -21,18 +22,15 @@
     flex-wrap: wrap;
 }
 
-.footer__card img {
-    width: 14px;
-}
-
-.footer__card p {
+.footer__card p a {
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
-.footer__card p a {
-    cursor: pointer;
+.footer__card p a span {
+    color: #243746;
 }
 
 .footer__list2 {
@@ -45,13 +43,21 @@
 }
 
 .footer__card2 p {
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
 .footer__card2 p a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     cursor: pointer;
+}
+
+.footer__card2 p a span {
+    color: #243746;
 }
 
 .footer__inner h4 {
@@ -80,6 +86,11 @@
     margin-top: 20px;
 }
 
+.copyright {
+    background-color: #fff;
+    color: #243746;
+}
+
 .copyright__inner {
     padding: 20px;
     text-align: center;
@@ -105,15 +116,19 @@
     align-items: center;
     gap: 5px;
     text-decoration: none;
-    color: #000;
+    color: #243746;
 }
 
 .footer__link a:hover svg {
-    fill: #000;
+    fill: #0044ff;
 }
 
 .footer__link a:hover svg path {
     fill: #fff;
+}
+
+.footer__link a:hover svg circle {
+    stroke: #0044ff;
 }
 
 @media (max-width: 1250px) {
@@ -192,4 +207,84 @@
     .copyright__inner p {
         font-size: 14px;
     }
+}
+
+.footer__card p:nth-child(5) a svg path:first-child {
+    transition: fill 0.3s ease-out;
+}
+
+.footer__card p:nth-child(5) a svg path:last-child {
+    transition: fill 0.3s ease-out;
+}
+
+.footer__card p:nth-child(5) a:hover svg path {
+    fill: #28e56e;
+}
+
+.footer__card p:nth-child(5) a:hover svg path:last-child {
+    fill: #fff;
+}
+
+.footer__card p:nth-child(4) a svg path:first-child {
+    transition: fill 0.3s ease-out;
+}
+
+.footer__card p:nth-child(4) a svg path:last-child {
+    transition: fill 0.3s ease-out;
+}
+
+.footer__card p:nth-child(4) a:hover svg path {
+    fill: #2ba6e1;
+}
+
+.footer__card p:nth-child(4) a:hover svg path:last-child {
+    fill: #fff;
+}
+
+.footer__card p:nth-child(3) a svg path:first-child {
+    transition: fill 0.3s ease-out;
+}
+
+.footer__card p:nth-child(3) a svg path:last-child {
+    transition: fill 0.3s ease-out;
+}
+
+.footer__card p:nth-child(3) a:hover svg path {
+    fill: blue;
+}
+
+.footer__card p:nth-child(3) a:hover svg path:last-child {
+    fill: #fff;
+}
+
+.footer__card p:nth-child(2) a svg path:first-child {
+    transition: fill 0.3s ease-out;
+}
+
+.footer__card p:nth-child(2) a svg path:last-child {
+    transition: fill 0.3s ease-out;
+}
+
+.footer__card p:nth-child(2) a:hover svg path {
+    fill: blue;
+}
+
+.footer__card p:nth-child(2) a:hover svg path:last-child {
+    fill: #fff;
+}
+
+.footer__card p:nth-child(1) a svg path:first-child {
+    transition: fill 0.3s ease-out;
+}
+
+.footer__card p:nth-child(1) a svg path:last-child {
+    transition: fill 0.3s ease-out;
+}
+
+.footer__card p:nth-child(1) a:hover svg path {
+    fill: blue;
+}
+
+.footer__card p:nth-child(1) a:hover svg path:last-child {
+    fill: #fff;
 }

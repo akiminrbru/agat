@@ -5,6 +5,11 @@
     font-family: "Montserrat", sans-serif;
 }
 
+@font-face {
+    font-family: "Univers";
+    src: url("../assets/fonts/Univers/UniversLTCYR-85XBlack.ttf");
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -17,8 +22,8 @@ html {
 
 .btn-up {
     position: fixed;
-    background-color: rgb(0, 0, 0);
-    left: 20px;
+    background-color: rgb(0, 0, 255);
+    right: 20px;
     bottom: 20px;
     cursor: pointer;
     display: flex;
@@ -38,45 +43,6 @@ html {
     background-size: 100% 100%;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
 }
-
-/* .big__btn {
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: transparent;
-    border: 1px solid #000000;
-    color: #000000;
-    cursor: pointer;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1;
-
-    padding: 1em 2em;
-    text-decoration: none;
-    text-align: center;
-    font-weight: 500;
-} */
-
-/* .big__btn:hover {
-    color: #fff;
-    outline: 0;
-}
-
-.big__btn {
-    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-}
-.big__btn:hover {
-    box-shadow: 0 0 40px 40px #000000 inset;
-} */
 
 .btn-up_hide {
     display: none;
@@ -112,21 +78,42 @@ html {
     transition: width 0.5s; /* Время эффекта */
 }
 
-.tn-elem .tn-atom {
-    background-size: auto !important;
-    background-repeat: repeat !important;
-    pointer-events: none;
+.header2 .underline-one {
+    color: #000000; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
 }
-.tn-elem {
-    background-image: url("../assets/background/noise.gif");
-    opacity: 0.05;
-    pointer-events: none;
-    z-index: 99999999 !important;
-    position: fixed;
-    top: 0;
+.header2 .underline-one:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: rgb(
+        255,
+        255,
+        255
+    ); /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.header2 .underline-one:hover:after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
     left: 0;
-    width: 100vw !important;
-    height: 100vh !important;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: rgb(
+        255,
+        255,
+        255
+    ); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s; /* Время эффекта */
 }
 
 .policy__modal {
@@ -264,12 +251,10 @@ body {
     width: 100%;
     object-fit: cover;
     opacity: 0.6;
-    transition: opacity 0.7s ease-in;
+    transition: opacity 0.3s ease-in;
     display: flex;
 }
-.banner-container ul li:hover {
-    width: 100%;
-}
+
 .banner-container ul li:hover a img {
     opacity: 1;
 }

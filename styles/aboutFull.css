@@ -1,6 +1,6 @@
 .aboutFull {
     min-height: 100vh;
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 80px;
 }
 
@@ -35,6 +35,7 @@
     margin-top: 10px;
     line-height: 1.4;
     font-size: 18px;
+    text-align: justify;
 }
 
 .aboutFull__list {

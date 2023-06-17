@@ -1,11 +1,22 @@
 .projects {
     min-height: 100vh;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 1440px) {
+    .projects {
+        background-color: #fff;
+    }
+}
+
+.swiper.swiper2 {
+    padding: 5px;
 }
 
 .projects__inner {
     padding-top: 120px;
     padding-bottom: 120px;
+    color: #243746;
 }
 
 .projects__inner h2 {
@@ -24,19 +35,58 @@
     align-items: center;
     gap: 5px;
     text-decoration: none;
-    color: #000;
+    color: #243746;
 }
 
 .projects__link a:hover svg {
-    fill: #000;
+    fill: #0044ff;
 }
 
 .projects__link a:hover svg path {
     fill: #fff;
 }
 
+.projects__link a:hover svg circle {
+    stroke: #0044ff;
+}
+
+.swiper-button-prev2 svg {
+    transform: rotate(180deg);
+}
+
+.swiper-button-prev2:hover svg {
+    fill: #0044ff;
+}
+
+.swiper-button-prev2:hover svg path {
+    fill: #fff;
+}
+
+.swiper-button-prev2:hover svg circle {
+    stroke: #0044ff;
+}
+
+.swiper-button-next2:hover svg {
+    fill: #0044ff;
+}
+
+.swiper-button-next2:hover svg path {
+    fill: #fff;
+}
+
+.swiper-button-next2:hover svg circle {
+    stroke: #0044ff;
+}
+
 .projects__list {
     margin-bottom: 25px;
+}
+
+.projects__card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 550px !important;
+    box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.25);
 }
 
 .projects__card img {
@@ -51,17 +101,32 @@
 }
 
 .projects__card h4 {
-    margin-top: 30px;
     font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .projects__text {
-    margin-top: 20px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: blue;
+}
+
+.projects__text img {
+    position: relative;
+    top: 2px;
+    width: 15px;
+    height: 15px;
+    right: 0px;
+    transition: all 200ms ease-in-out;
+}
+
+.projects__text:hover img {
+    right: -5px;
 }
 
 .projects__card div {
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .projects__list {

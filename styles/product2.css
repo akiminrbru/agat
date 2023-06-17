@@ -1,7 +1,8 @@
 .product2 {
     min-height: 100vh;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
+    color: #243746;
 }
 
 .product2__inner h2 {

@@ -1,7 +1,8 @@
 .product1 {
     min-height: 100vh;
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 80px;
+    color: #243746;
 }
 
 .product1__inner h2 {
@@ -33,6 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: justify;
 }
 
 .product1__info p {
@@ -41,29 +43,35 @@
 }
 
 .product1__advantage {
+    text-align: justify;
+    font-size: 18px;
     margin-top: 75px;
 }
 
 .product1__advantage span {
-    font-size: 18px;
+    color: blue;
     font-weight: 500;
 }
 
 .product1__advantage p {
-    margin-top: 15px;
+    margin-top: 16px;
 }
 
 .product1__charact {
+    font-size: 18px;
     margin-top: 75px;
 }
 
 .product1__charact span {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
+    font-style: italic;
+    color: blue;
 }
 
 .product1__charact p {
-    margin-top: 15px;
+    margin-top: 16px;
+    text-align: justify;
 }
 
 .table {
@@ -88,7 +96,7 @@
     border-radius: 0 8px 8px 0;
 }
 .table tbody td {
-    text-align: left;
+    text-align: center;
     border: none;
     padding: 10px 15px;
     font-size: 14px;
@@ -102,6 +110,10 @@
 }
 .table tbody tr td:last-child {
     border-radius: 0 8px 8px 0;
+}
+
+.table__upload {
+    color: black;
 }
 
 @media (min-width: 992px) and (max-width: 1250px) {

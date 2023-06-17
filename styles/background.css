@@ -1,0 +1,12 @@
+body {
+    background-image: url("../assets/background/123.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (max-width: 1440px) {
+    body {
+        background-image: none;
+    }
+}
